@@ -1,0 +1,21 @@
+{
+  "checkpoint": "CS6338 Milestone 2",
+  "pdf_pages": 10,
+  "required_sections": 8,
+  "unit_tests_passed": 9,
+  "gold_triples_file_count": 88,
+  "gold_reference_kind": "ai_reviewed_source_only_reference",
+  "human_gold": false,
+  "eval_qa_pairs": 20,
+  "multi_hop_paths": 33,
+  "initialized_nodes": 373,
+  "initialized_edges": 960,
+  "source_evidence_units": 2054,
+  "source_reference_records_parser_checked": 30,
+  "synthetic_parser_examples": 2,
+  "model_requests_sent": 0,
+  "node2vec_training_performed": false,
+  "ragas_executed": false,
+  "human_testing_performed": false,
+  "hosted_repository_url": "https://github.com/Freedomamiss/CyberGraphQA"
+}

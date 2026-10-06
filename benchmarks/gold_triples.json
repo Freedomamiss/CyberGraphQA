@@ -1,0 +1,804 @@
+{
+  "schema_version": 1,
+  "reference_kind": "ai_reviewed_source_only_reference",
+  "human_gold": false,
+  "human_reviewed": false,
+  "independent_review_complete": false,
+  "reviewer": "Claude (Claude Sonnet 5.5, Anthropic)",
+  "source_reference_sha256": "e47f91b833b58994412ef12e81dd5c7354e4dd22df44ba55dfc50f4e2d1a10a7",
+  "review_scope": "Description-only product/vendor assertions; no structured metadata gold substituted. Ambiguous source annotations remain unresolved.",
+  "triples": [
+    {
+      "cve_id": "CVE-2020-1040",
+      "subject": "CVE-2020-1040",
+      "predicate": "AFFECTS",
+      "object": "Hyper-V RemoteFX vGPU",
+      "evidence": "Hyper-V RemoteFX vGPU",
+      "description": "A remote code execution vulnerability exists when Hyper-V RemoteFX vGPU on a host server fails to properly validate input from an authenticated user on a guest operating system, aka 'Hyper-V RemoteFX vGPU Remote Code Execution Vulnerability'. This CVE ID is unique from CVE-2020-1032, CVE-2020-1036, CVE-2020-1041, CVE-2020-1042, CVE-2020-1043.",
+      "annotation_notes": "Alias: 'Hyper-V RemoteFX vGPU' appears twice (body and aka title). Kept as one product; could alternatively be split into Hyper-V (product) and RemoteFX vGPU (component). No vendor stated (Microsoft not inferred). [ADJUDICATE: split vs single]"
+    },
+    {
+      "cve_id": "CVE-2020-16013",
+      "subject": "CVE-2020-16013",
+      "predicate": "AFFECTS",
+      "object": "Google Chrome",
+      "evidence": "Google Chrome",
+      "description": "Inappropriate implementation in V8 in Google Chrome prior to 86.0.4240.198 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+      "annotation_notes": "V8 is a named component of Chrome. Vendor for Google Chrome from explicit branding 'Google Chrome'. V8's vendor NOT inferred from containing product, so vendors=[]. Version 86.0.4240.198 is a fixed-boundary ('prior to'); not recorded."
+    },
+    {
+      "cve_id": "CVE-2020-16013",
+      "subject": "Google Chrome",
+      "predicate": "MADE_BY",
+      "object": "Google",
+      "evidence": "Google Chrome",
+      "description": "Inappropriate implementation in V8 in Google Chrome prior to 86.0.4240.198 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+      "annotation_notes": "V8 is a named component of Chrome. Vendor for Google Chrome from explicit branding 'Google Chrome'. V8's vendor NOT inferred from containing product, so vendors=[]. Version 86.0.4240.198 is a fixed-boundary ('prior to'); not recorded."
+    },
+    {
+      "cve_id": "CVE-2020-16013",
+      "subject": "CVE-2020-16013",
+      "predicate": "AFFECTS",
+      "object": "V8",
+      "evidence": "V8 in Google Chrome",
+      "description": "Inappropriate implementation in V8 in Google Chrome prior to 86.0.4240.198 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+      "annotation_notes": "V8 is a named component of Chrome. Vendor for Google Chrome from explicit branding 'Google Chrome'. V8's vendor NOT inferred from containing product, so vendors=[]. Version 86.0.4240.198 is a fixed-boundary ('prior to'); not recorded."
+    },
+    {
+      "cve_id": "CVE-2021-22899",
+      "subject": "CVE-2021-22899",
+      "predicate": "AFFECTS",
+      "object": "Pulse Connect Secure",
+      "evidence": "Pulse Connect Secure",
+      "description": "A command injection vulnerability exists in Pulse Connect Secure before 9.1R11.4 allows a remote authenticated attacker to perform remote code execution via Windows Resource Profiles Feature",
+      "annotation_notes": "No vendor stated: 'Pulse' alone is not an explicit vendor name; none inferred (Ivanti not inferred). 'Windows Resource Profiles Feature' is a named feature of Pulse Connect Secure, not Windows; included as a component with no vendor. [ADJUDICATE: is a named feature a 'component'?]"
+    },
+    {
+      "cve_id": "CVE-2021-22899",
+      "subject": "CVE-2021-22899",
+      "predicate": "AFFECTS",
+      "object": "Windows Resource Profiles Feature",
+      "evidence": "Windows Resource Profiles Feature",
+      "description": "A command injection vulnerability exists in Pulse Connect Secure before 9.1R11.4 allows a remote authenticated attacker to perform remote code execution via Windows Resource Profiles Feature",
+      "annotation_notes": "No vendor stated: 'Pulse' alone is not an explicit vendor name; none inferred (Ivanti not inferred). 'Windows Resource Profiles Feature' is a named feature of Pulse Connect Secure, not Windows; included as a component with no vendor. [ADJUDICATE: is a named feature a 'component'?]"
+    },
+    {
+      "cve_id": "CVE-2021-30883",
+      "subject": "CVE-2021-30883",
+      "predicate": "AFFECTS",
+      "object": "iOS",
+      "evidence": "iOS 15.0.2",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 15.0.2 and iPadOS 15.0.2, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1, macOS Big Sur 11.6.1. An application may be able to execute arbitrary code with kernel privileges. Apple is aware of a report that this issue may have been actively exploited..",
+      "annotation_notes": "Description lists only fixed versions; products named as fixed-in are treated as the affected products, versions omitted. macOS Monterey and macOS Big Sur kept as distinct names as written (could be alias-grouped under 'macOS'). 'Apple is aware of a report' is a statement by Apple, not product branding; vendors left empty. [ADJUDICATE: Apple vendor policy; macOS codename granularity]"
+    },
+    {
+      "cve_id": "CVE-2021-30883",
+      "subject": "CVE-2021-30883",
+      "predicate": "AFFECTS",
+      "object": "iPadOS",
+      "evidence": "iPadOS 15.0.2",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 15.0.2 and iPadOS 15.0.2, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1, macOS Big Sur 11.6.1. An application may be able to execute arbitrary code with kernel privileges. Apple is aware of a report that this issue may have been actively exploited..",
+      "annotation_notes": "Description lists only fixed versions; products named as fixed-in are treated as the affected products, versions omitted. macOS Monterey and macOS Big Sur kept as distinct names as written (could be alias-grouped under 'macOS'). 'Apple is aware of a report' is a statement by Apple, not product branding; vendors left empty. [ADJUDICATE: Apple vendor policy; macOS codename granularity]"
+    },
+    {
+      "cve_id": "CVE-2021-30883",
+      "subject": "CVE-2021-30883",
+      "predicate": "AFFECTS",
+      "object": "macOS Monterey",
+      "evidence": "macOS Monterey 12.0.1",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 15.0.2 and iPadOS 15.0.2, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1, macOS Big Sur 11.6.1. An application may be able to execute arbitrary code with kernel privileges. Apple is aware of a report that this issue may have been actively exploited..",
+      "annotation_notes": "Description lists only fixed versions; products named as fixed-in are treated as the affected products, versions omitted. macOS Monterey and macOS Big Sur kept as distinct names as written (could be alias-grouped under 'macOS'). 'Apple is aware of a report' is a statement by Apple, not product branding; vendors left empty. [ADJUDICATE: Apple vendor policy; macOS codename granularity]"
+    },
+    {
+      "cve_id": "CVE-2021-30883",
+      "subject": "CVE-2021-30883",
+      "predicate": "AFFECTS",
+      "object": "tvOS",
+      "evidence": "tvOS 15.1",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 15.0.2 and iPadOS 15.0.2, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1, macOS Big Sur 11.6.1. An application may be able to execute arbitrary code with kernel privileges. Apple is aware of a report that this issue may have been actively exploited..",
+      "annotation_notes": "Description lists only fixed versions; products named as fixed-in are treated as the affected products, versions omitted. macOS Monterey and macOS Big Sur kept as distinct names as written (could be alias-grouped under 'macOS'). 'Apple is aware of a report' is a statement by Apple, not product branding; vendors left empty. [ADJUDICATE: Apple vendor policy; macOS codename granularity]"
+    },
+    {
+      "cve_id": "CVE-2021-30883",
+      "subject": "CVE-2021-30883",
+      "predicate": "AFFECTS",
+      "object": "watchOS",
+      "evidence": "watchOS 8.1",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 15.0.2 and iPadOS 15.0.2, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1, macOS Big Sur 11.6.1. An application may be able to execute arbitrary code with kernel privileges. Apple is aware of a report that this issue may have been actively exploited..",
+      "annotation_notes": "Description lists only fixed versions; products named as fixed-in are treated as the affected products, versions omitted. macOS Monterey and macOS Big Sur kept as distinct names as written (could be alias-grouped under 'macOS'). 'Apple is aware of a report' is a statement by Apple, not product branding; vendors left empty. [ADJUDICATE: Apple vendor policy; macOS codename granularity]"
+    },
+    {
+      "cve_id": "CVE-2021-30883",
+      "subject": "CVE-2021-30883",
+      "predicate": "AFFECTS",
+      "object": "macOS Big Sur",
+      "evidence": "macOS Big Sur 11.6.1",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 15.0.2 and iPadOS 15.0.2, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1, macOS Big Sur 11.6.1. An application may be able to execute arbitrary code with kernel privileges. Apple is aware of a report that this issue may have been actively exploited..",
+      "annotation_notes": "Description lists only fixed versions; products named as fixed-in are treated as the affected products, versions omitted. macOS Monterey and macOS Big Sur kept as distinct names as written (could be alias-grouped under 'macOS'). 'Apple is aware of a report' is a statement by Apple, not product branding; vendors left empty. [ADJUDICATE: Apple vendor policy; macOS codename granularity]"
+    },
+    {
+      "cve_id": "CVE-2021-31956",
+      "subject": "CVE-2021-31956",
+      "predicate": "AFFECTS",
+      "object": "Windows NTFS",
+      "evidence": "Windows NTFS",
+      "description": "Windows NTFS Elevation of Privilege Vulnerability",
+      "annotation_notes": "Single phrase; could be product 'Windows' + component 'NTFS'. Kept as written. No vendor stated (Microsoft not inferred). [ADJUDICATE: split vs single]"
+    },
+    {
+      "cve_id": "CVE-2021-41357",
+      "subject": "CVE-2021-41357",
+      "predicate": "AFFECTS",
+      "object": "Win32k",
+      "evidence": "Win32k",
+      "description": "Win32k Elevation of Privilege Vulnerability",
+      "annotation_notes": "Component name only; no product or vendor stated. Microsoft/Windows not inferred."
+    },
+    {
+      "cve_id": "CVE-2022-20699",
+      "subject": "CVE-2022-20699",
+      "predicate": "AFFECTS",
+      "object": "RV160",
+      "evidence": "Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers",
+      "description": "Multiple vulnerabilities in Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers could allow an attacker to do any of the following: Execute arbitrary code Elevate privileges Execute arbitrary commands Bypass authentication and authorization protections Fetch and run unsigned software Cause denial of service (DoS) For more information about these vulnerabilities, see the Details section of this advisory.",
+      "annotation_notes": "One source phrase names four router models in the 'RV160, RV260, RV340, and RV345 Series' family; recorded as four products sharing the same evidence quote. Alternatively one product 'Cisco Small Business RV Series Routers'. Vendor Cisco from explicit 'Cisco Small Business' branding. [ADJUDICATE: model-level split; whether names should carry brand prefix]"
+    },
+    {
+      "cve_id": "CVE-2022-20699",
+      "subject": "RV160",
+      "predicate": "MADE_BY",
+      "object": "Cisco",
+      "evidence": "Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers",
+      "description": "Multiple vulnerabilities in Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers could allow an attacker to do any of the following: Execute arbitrary code Elevate privileges Execute arbitrary commands Bypass authentication and authorization protections Fetch and run unsigned software Cause denial of service (DoS) For more information about these vulnerabilities, see the Details section of this advisory.",
+      "annotation_notes": "One source phrase names four router models in the 'RV160, RV260, RV340, and RV345 Series' family; recorded as four products sharing the same evidence quote. Alternatively one product 'Cisco Small Business RV Series Routers'. Vendor Cisco from explicit 'Cisco Small Business' branding. [ADJUDICATE: model-level split; whether names should carry brand prefix]"
+    },
+    {
+      "cve_id": "CVE-2022-20699",
+      "subject": "CVE-2022-20699",
+      "predicate": "AFFECTS",
+      "object": "RV260",
+      "evidence": "Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers",
+      "description": "Multiple vulnerabilities in Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers could allow an attacker to do any of the following: Execute arbitrary code Elevate privileges Execute arbitrary commands Bypass authentication and authorization protections Fetch and run unsigned software Cause denial of service (DoS) For more information about these vulnerabilities, see the Details section of this advisory.",
+      "annotation_notes": "One source phrase names four router models in the 'RV160, RV260, RV340, and RV345 Series' family; recorded as four products sharing the same evidence quote. Alternatively one product 'Cisco Small Business RV Series Routers'. Vendor Cisco from explicit 'Cisco Small Business' branding. [ADJUDICATE: model-level split; whether names should carry brand prefix]"
+    },
+    {
+      "cve_id": "CVE-2022-20699",
+      "subject": "RV260",
+      "predicate": "MADE_BY",
+      "object": "Cisco",
+      "evidence": "Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers",
+      "description": "Multiple vulnerabilities in Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers could allow an attacker to do any of the following: Execute arbitrary code Elevate privileges Execute arbitrary commands Bypass authentication and authorization protections Fetch and run unsigned software Cause denial of service (DoS) For more information about these vulnerabilities, see the Details section of this advisory.",
+      "annotation_notes": "One source phrase names four router models in the 'RV160, RV260, RV340, and RV345 Series' family; recorded as four products sharing the same evidence quote. Alternatively one product 'Cisco Small Business RV Series Routers'. Vendor Cisco from explicit 'Cisco Small Business' branding. [ADJUDICATE: model-level split; whether names should carry brand prefix]"
+    },
+    {
+      "cve_id": "CVE-2022-20699",
+      "subject": "CVE-2022-20699",
+      "predicate": "AFFECTS",
+      "object": "RV340",
+      "evidence": "Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers",
+      "description": "Multiple vulnerabilities in Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers could allow an attacker to do any of the following: Execute arbitrary code Elevate privileges Execute arbitrary commands Bypass authentication and authorization protections Fetch and run unsigned software Cause denial of service (DoS) For more information about these vulnerabilities, see the Details section of this advisory.",
+      "annotation_notes": "One source phrase names four router models in the 'RV160, RV260, RV340, and RV345 Series' family; recorded as four products sharing the same evidence quote. Alternatively one product 'Cisco Small Business RV Series Routers'. Vendor Cisco from explicit 'Cisco Small Business' branding. [ADJUDICATE: model-level split; whether names should carry brand prefix]"
+    },
+    {
+      "cve_id": "CVE-2022-20699",
+      "subject": "RV340",
+      "predicate": "MADE_BY",
+      "object": "Cisco",
+      "evidence": "Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers",
+      "description": "Multiple vulnerabilities in Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers could allow an attacker to do any of the following: Execute arbitrary code Elevate privileges Execute arbitrary commands Bypass authentication and authorization protections Fetch and run unsigned software Cause denial of service (DoS) For more information about these vulnerabilities, see the Details section of this advisory.",
+      "annotation_notes": "One source phrase names four router models in the 'RV160, RV260, RV340, and RV345 Series' family; recorded as four products sharing the same evidence quote. Alternatively one product 'Cisco Small Business RV Series Routers'. Vendor Cisco from explicit 'Cisco Small Business' branding. [ADJUDICATE: model-level split; whether names should carry brand prefix]"
+    },
+    {
+      "cve_id": "CVE-2022-20699",
+      "subject": "CVE-2022-20699",
+      "predicate": "AFFECTS",
+      "object": "RV345",
+      "evidence": "Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers",
+      "description": "Multiple vulnerabilities in Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers could allow an attacker to do any of the following: Execute arbitrary code Elevate privileges Execute arbitrary commands Bypass authentication and authorization protections Fetch and run unsigned software Cause denial of service (DoS) For more information about these vulnerabilities, see the Details section of this advisory.",
+      "annotation_notes": "One source phrase names four router models in the 'RV160, RV260, RV340, and RV345 Series' family; recorded as four products sharing the same evidence quote. Alternatively one product 'Cisco Small Business RV Series Routers'. Vendor Cisco from explicit 'Cisco Small Business' branding. [ADJUDICATE: model-level split; whether names should carry brand prefix]"
+    },
+    {
+      "cve_id": "CVE-2022-20699",
+      "subject": "RV345",
+      "predicate": "MADE_BY",
+      "object": "Cisco",
+      "evidence": "Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers",
+      "description": "Multiple vulnerabilities in Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers could allow an attacker to do any of the following: Execute arbitrary code Elevate privileges Execute arbitrary commands Bypass authentication and authorization protections Fetch and run unsigned software Cause denial of service (DoS) For more information about these vulnerabilities, see the Details section of this advisory.",
+      "annotation_notes": "One source phrase names four router models in the 'RV160, RV260, RV340, and RV345 Series' family; recorded as four products sharing the same evidence quote. Alternatively one product 'Cisco Small Business RV Series Routers'. Vendor Cisco from explicit 'Cisco Small Business' branding. [ADJUDICATE: model-level split; whether names should carry brand prefix]"
+    },
+    {
+      "cve_id": "CVE-2022-20775",
+      "subject": "CVE-2022-20775",
+      "predicate": "AFFECTS",
+      "object": "Cisco SD-WAN Software",
+      "evidence": "Cisco SD-WAN Software",
+      "description": "A vulnerability in the CLI of Cisco SD-WAN Software could allow an authenticated, local attacker to gain elevated privileges.\r\n\r\nThis vulnerability is due to improper access controls on commands within the application CLI. An attacker could exploit this vulnerability by running a maliciously crafted command on the application CLI. A successful exploit could allow the attacker to execute arbitrary commands as the root user.\r\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\r\nhttps://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sd-wan-priv-E6e8tEdF",
+      "annotation_notes": "'CLI' is a generic interface and not annotated as a product/component. Name includes the brand prefix as written. [ADJUDICATE: brand prefix in names]"
+    },
+    {
+      "cve_id": "CVE-2022-20775",
+      "subject": "Cisco SD-WAN Software",
+      "predicate": "MADE_BY",
+      "object": "Cisco",
+      "evidence": "Cisco SD-WAN Software",
+      "description": "A vulnerability in the CLI of Cisco SD-WAN Software could allow an authenticated, local attacker to gain elevated privileges.\r\n\r\nThis vulnerability is due to improper access controls on commands within the application CLI. An attacker could exploit this vulnerability by running a maliciously crafted command on the application CLI. A successful exploit could allow the attacker to execute arbitrary commands as the root user.\r\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\r\nhttps://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sd-wan-priv-E6e8tEdF",
+      "annotation_notes": "'CLI' is a generic interface and not annotated as a product/component. Name includes the brand prefix as written. [ADJUDICATE: brand prefix in names]"
+    },
+    {
+      "cve_id": "CVE-2022-22960",
+      "subject": "CVE-2022-22960",
+      "predicate": "AFFECTS",
+      "object": "VMware Workspace ONE Access",
+      "evidence": "VMware Workspace ONE Access",
+      "description": "VMware Workspace ONE Access, Identity Manager and vRealize Automation contain a privilege escalation vulnerability due to improper permissions in support scripts. A malicious actor with local access can escalate privileges to 'root'.",
+      "annotation_notes": "Coordinated list 'VMware Workspace ONE Access, Identity Manager and vRealize Automation'. VMware explicitly brands only the first item; whether it distributes over the list is ambiguous, so no vendor assigned to the other two (no inference from the list). [ADJUDICATE: vendor distribution over lists]"
+    },
+    {
+      "cve_id": "CVE-2022-22960",
+      "subject": "VMware Workspace ONE Access",
+      "predicate": "MADE_BY",
+      "object": "VMware",
+      "evidence": "VMware Workspace ONE Access",
+      "description": "VMware Workspace ONE Access, Identity Manager and vRealize Automation contain a privilege escalation vulnerability due to improper permissions in support scripts. A malicious actor with local access can escalate privileges to 'root'.",
+      "annotation_notes": "Coordinated list 'VMware Workspace ONE Access, Identity Manager and vRealize Automation'. VMware explicitly brands only the first item; whether it distributes over the list is ambiguous, so no vendor assigned to the other two (no inference from the list). [ADJUDICATE: vendor distribution over lists]"
+    },
+    {
+      "cve_id": "CVE-2022-22960",
+      "subject": "CVE-2022-22960",
+      "predicate": "AFFECTS",
+      "object": "Identity Manager",
+      "evidence": "Identity Manager",
+      "description": "VMware Workspace ONE Access, Identity Manager and vRealize Automation contain a privilege escalation vulnerability due to improper permissions in support scripts. A malicious actor with local access can escalate privileges to 'root'.",
+      "annotation_notes": "Coordinated list 'VMware Workspace ONE Access, Identity Manager and vRealize Automation'. VMware explicitly brands only the first item; whether it distributes over the list is ambiguous, so no vendor assigned to the other two (no inference from the list). [ADJUDICATE: vendor distribution over lists]"
+    },
+    {
+      "cve_id": "CVE-2022-22960",
+      "subject": "CVE-2022-22960",
+      "predicate": "AFFECTS",
+      "object": "vRealize Automation",
+      "evidence": "vRealize Automation",
+      "description": "VMware Workspace ONE Access, Identity Manager and vRealize Automation contain a privilege escalation vulnerability due to improper permissions in support scripts. A malicious actor with local access can escalate privileges to 'root'.",
+      "annotation_notes": "Coordinated list 'VMware Workspace ONE Access, Identity Manager and vRealize Automation'. VMware explicitly brands only the first item; whether it distributes over the list is ambiguous, so no vendor assigned to the other two (no inference from the list). [ADJUDICATE: vendor distribution over lists]"
+    },
+    {
+      "cve_id": "CVE-2022-38028",
+      "subject": "CVE-2022-38028",
+      "predicate": "AFFECTS",
+      "object": "Windows Print Spooler",
+      "evidence": "Windows Print Spooler",
+      "description": "Windows Print Spooler Elevation of Privilege Vulnerability",
+      "annotation_notes": "Could be Windows + Print Spooler; kept as written. No vendor stated."
+    },
+    {
+      "cve_id": "CVE-2022-4262",
+      "subject": "CVE-2022-4262",
+      "predicate": "AFFECTS",
+      "object": "Google Chrome",
+      "evidence": "Google Chrome",
+      "description": "Type confusion in V8 in Google Chrome prior to 108.0.5359.94 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+      "annotation_notes": "V8 vendor not inferred from containing product. '(Chromium security severity: High)' is a severity label, not an affected product; Chromium not annotated. [ADJUDICATE: whether Chromium counts]"
+    },
+    {
+      "cve_id": "CVE-2022-4262",
+      "subject": "Google Chrome",
+      "predicate": "MADE_BY",
+      "object": "Google",
+      "evidence": "Google Chrome",
+      "description": "Type confusion in V8 in Google Chrome prior to 108.0.5359.94 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+      "annotation_notes": "V8 vendor not inferred from containing product. '(Chromium security severity: High)' is a severity label, not an affected product; Chromium not annotated. [ADJUDICATE: whether Chromium counts]"
+    },
+    {
+      "cve_id": "CVE-2022-4262",
+      "subject": "CVE-2022-4262",
+      "predicate": "AFFECTS",
+      "object": "V8",
+      "evidence": "V8 in Google Chrome",
+      "description": "Type confusion in V8 in Google Chrome prior to 108.0.5359.94 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+      "annotation_notes": "V8 vendor not inferred from containing product. '(Chromium security severity: High)' is a severity label, not an affected product; Chromium not annotated. [ADJUDICATE: whether Chromium counts]"
+    },
+    {
+      "cve_id": "CVE-2023-32049",
+      "subject": "CVE-2023-32049",
+      "predicate": "AFFECTS",
+      "object": "Windows SmartScreen",
+      "evidence": "Windows SmartScreen",
+      "description": "Windows SmartScreen Security Feature Bypass Vulnerability",
+      "annotation_notes": "Could be Windows + SmartScreen; kept as written. No vendor stated."
+    },
+    {
+      "cve_id": "CVE-2023-34048",
+      "subject": "CVE-2023-34048",
+      "predicate": "AFFECTS",
+      "object": "vCenter Server",
+      "evidence": "vCenter Server",
+      "description": "vCenter Server contains an out-of-bounds write vulnerability in the implementation of the DCERPC protocol.\u00a0A malicious actor with network access to vCenter Server may trigger an out-of-bounds write potentially leading to remote code execution.",
+      "annotation_notes": "No vendor stated in the description (VMware not inferred). 'DCERPC protocol' is a generic protocol, not annotated."
+    },
+    {
+      "cve_id": "CVE-2023-37450",
+      "subject": "CVE-2023-37450",
+      "predicate": "AFFECTS",
+      "object": "iOS",
+      "evidence": "iOS 16.6",
+      "description": "The issue was addressed with improved checks. This issue is fixed in iOS 16.6 and iPadOS 16.6, Safari 16.5.2, tvOS 16.6, macOS Ventura 13.5, watchOS 9.6. Processing web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. 'Apple is aware' is not product branding; vendors empty. [ADJUDICATE: Apple vendor policy]"
+    },
+    {
+      "cve_id": "CVE-2023-37450",
+      "subject": "CVE-2023-37450",
+      "predicate": "AFFECTS",
+      "object": "iPadOS",
+      "evidence": "iPadOS 16.6",
+      "description": "The issue was addressed with improved checks. This issue is fixed in iOS 16.6 and iPadOS 16.6, Safari 16.5.2, tvOS 16.6, macOS Ventura 13.5, watchOS 9.6. Processing web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. 'Apple is aware' is not product branding; vendors empty. [ADJUDICATE: Apple vendor policy]"
+    },
+    {
+      "cve_id": "CVE-2023-37450",
+      "subject": "CVE-2023-37450",
+      "predicate": "AFFECTS",
+      "object": "Safari",
+      "evidence": "Safari 16.5.2",
+      "description": "The issue was addressed with improved checks. This issue is fixed in iOS 16.6 and iPadOS 16.6, Safari 16.5.2, tvOS 16.6, macOS Ventura 13.5, watchOS 9.6. Processing web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. 'Apple is aware' is not product branding; vendors empty. [ADJUDICATE: Apple vendor policy]"
+    },
+    {
+      "cve_id": "CVE-2023-37450",
+      "subject": "CVE-2023-37450",
+      "predicate": "AFFECTS",
+      "object": "tvOS",
+      "evidence": "tvOS 16.6",
+      "description": "The issue was addressed with improved checks. This issue is fixed in iOS 16.6 and iPadOS 16.6, Safari 16.5.2, tvOS 16.6, macOS Ventura 13.5, watchOS 9.6. Processing web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. 'Apple is aware' is not product branding; vendors empty. [ADJUDICATE: Apple vendor policy]"
+    },
+    {
+      "cve_id": "CVE-2023-37450",
+      "subject": "CVE-2023-37450",
+      "predicate": "AFFECTS",
+      "object": "macOS Ventura",
+      "evidence": "macOS Ventura 13.5",
+      "description": "The issue was addressed with improved checks. This issue is fixed in iOS 16.6 and iPadOS 16.6, Safari 16.5.2, tvOS 16.6, macOS Ventura 13.5, watchOS 9.6. Processing web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. 'Apple is aware' is not product branding; vendors empty. [ADJUDICATE: Apple vendor policy]"
+    },
+    {
+      "cve_id": "CVE-2023-37450",
+      "subject": "CVE-2023-37450",
+      "predicate": "AFFECTS",
+      "object": "watchOS",
+      "evidence": "watchOS 9.6",
+      "description": "The issue was addressed with improved checks. This issue is fixed in iOS 16.6 and iPadOS 16.6, Safari 16.5.2, tvOS 16.6, macOS Ventura 13.5, watchOS 9.6. Processing web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. 'Apple is aware' is not product branding; vendors empty. [ADJUDICATE: Apple vendor policy]"
+    },
+    {
+      "cve_id": "CVE-2023-38180",
+      "subject": "CVE-2023-38180",
+      "predicate": "AFFECTS",
+      "object": ".NET",
+      "evidence": ".NET and Visual Studio",
+      "description": ".NET and Visual Studio Denial of Service Vulnerability",
+      "annotation_notes": "Two products in one coordinated phrase; both share the quote. No vendor stated."
+    },
+    {
+      "cve_id": "CVE-2023-38180",
+      "subject": "CVE-2023-38180",
+      "predicate": "AFFECTS",
+      "object": "Visual Studio",
+      "evidence": ".NET and Visual Studio",
+      "description": ".NET and Visual Studio Denial of Service Vulnerability",
+      "annotation_notes": "Two products in one coordinated phrase; both share the quote. No vendor stated."
+    },
+    {
+      "cve_id": "CVE-2024-13159",
+      "subject": "CVE-2024-13159",
+      "predicate": "AFFECTS",
+      "object": "Ivanti EPM",
+      "evidence": "Ivanti EPM",
+      "description": "Absolute path traversal in Ivanti EPM before the 2024 January-2025 Security Update and 2022 SU6 January-2025 Security Update allows a remote unauthenticated attacker to leak sensitive information.",
+      "annotation_notes": "Security Update names are release identifiers, not products."
+    },
+    {
+      "cve_id": "CVE-2024-13159",
+      "subject": "Ivanti EPM",
+      "predicate": "MADE_BY",
+      "object": "Ivanti",
+      "evidence": "Ivanti EPM",
+      "description": "Absolute path traversal in Ivanti EPM before the 2024 January-2025 Security Update and 2022 SU6 January-2025 Security Update allows a remote unauthenticated attacker to leak sensitive information.",
+      "annotation_notes": "Security Update names are release identifiers, not products."
+    },
+    {
+      "cve_id": "CVE-2024-13180",
+      "subject": "CVE-2024-13180",
+      "predicate": "AFFECTS",
+      "object": "Ivanti Avalanche",
+      "evidence": "Ivanti Avalanche",
+      "description": "Path Traversal in Ivanti Avalanche before version 6.4.7 allows a remote unauthenticated attacker to leak sensitive information. This CVE addresses incomplete fixes from CVE-2024-47011.",
+      "annotation_notes": "None."
+    },
+    {
+      "cve_id": "CVE-2024-13180",
+      "subject": "Ivanti Avalanche",
+      "predicate": "MADE_BY",
+      "object": "Ivanti",
+      "evidence": "Ivanti Avalanche",
+      "description": "Path Traversal in Ivanti Avalanche before version 6.4.7 allows a remote unauthenticated attacker to leak sensitive information. This CVE addresses incomplete fixes from CVE-2024-47011.",
+      "annotation_notes": "None."
+    },
+    {
+      "cve_id": "CVE-2024-21887",
+      "subject": "CVE-2024-21887",
+      "predicate": "AFFECTS",
+      "object": "Ivanti Connect Secure",
+      "evidence": "Ivanti Connect Secure",
+      "description": "A command injection vulnerability in web components of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x)  allows an authenticated administrator to send specially crafted requests and execute arbitrary commands on the appliance.",
+      "annotation_notes": "'web components' is generic and not annotated as a separate component. Version labels (9.x, 22.x) omitted."
+    },
+    {
+      "cve_id": "CVE-2024-21887",
+      "subject": "Ivanti Connect Secure",
+      "predicate": "MADE_BY",
+      "object": "Ivanti",
+      "evidence": "Ivanti Connect Secure",
+      "description": "A command injection vulnerability in web components of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x)  allows an authenticated administrator to send specially crafted requests and execute arbitrary commands on the appliance.",
+      "annotation_notes": "'web components' is generic and not annotated as a separate component. Version labels (9.x, 22.x) omitted."
+    },
+    {
+      "cve_id": "CVE-2024-21887",
+      "subject": "CVE-2024-21887",
+      "predicate": "AFFECTS",
+      "object": "Ivanti Policy Secure",
+      "evidence": "Ivanti Policy Secure",
+      "description": "A command injection vulnerability in web components of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x)  allows an authenticated administrator to send specially crafted requests and execute arbitrary commands on the appliance.",
+      "annotation_notes": "'web components' is generic and not annotated as a separate component. Version labels (9.x, 22.x) omitted."
+    },
+    {
+      "cve_id": "CVE-2024-21887",
+      "subject": "Ivanti Policy Secure",
+      "predicate": "MADE_BY",
+      "object": "Ivanti",
+      "evidence": "Ivanti Policy Secure",
+      "description": "A command injection vulnerability in web components of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x)  allows an authenticated administrator to send specially crafted requests and execute arbitrary commands on the appliance.",
+      "annotation_notes": "'web components' is generic and not annotated as a separate component. Version labels (9.x, 22.x) omitted."
+    },
+    {
+      "cve_id": "CVE-2024-26169",
+      "subject": "CVE-2024-26169",
+      "predicate": "AFFECTS",
+      "object": "Windows Error Reporting Service",
+      "evidence": "Windows Error Reporting Service",
+      "description": "Windows Error Reporting Service Elevation of Privilege Vulnerability",
+      "annotation_notes": "Could be Windows + Error Reporting Service; kept as written. No vendor stated."
+    },
+    {
+      "cve_id": "CVE-2024-38178",
+      "subject": "CVE-2024-38178",
+      "predicate": "AFFECTS",
+      "object": "Scripting Engine",
+      "evidence": "Scripting Engine",
+      "description": "Scripting Engine Memory Corruption Vulnerability",
+      "annotation_notes": "'Scripting Engine' is a descriptive component name with no product or vendor; weak candidate. [ADJUDICATE: generic vs named component]"
+    },
+    {
+      "cve_id": "CVE-2025-1922",
+      "subject": "CVE-2025-1922",
+      "predicate": "AFFECTS",
+      "object": "Google Chrome",
+      "evidence": "Google Chrome on Android",
+      "description": "Inappropriate implementation in Selection in Google Chrome on Android prior to 134.0.6998.35 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
+      "annotation_notes": "'Android' treated as a platform qualifier, not a separately affected product. 'Selection' is a component of Chrome; vendor not inferred. Chromium severity label not annotated. [ADJUDICATE: Android; 'Selection' as component]"
+    },
+    {
+      "cve_id": "CVE-2025-1922",
+      "subject": "Google Chrome",
+      "predicate": "MADE_BY",
+      "object": "Google",
+      "evidence": "Google Chrome",
+      "description": "Inappropriate implementation in Selection in Google Chrome on Android prior to 134.0.6998.35 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
+      "annotation_notes": "'Android' treated as a platform qualifier, not a separately affected product. 'Selection' is a component of Chrome; vendor not inferred. Chromium severity label not annotated. [ADJUDICATE: Android; 'Selection' as component]"
+    },
+    {
+      "cve_id": "CVE-2025-1922",
+      "subject": "CVE-2025-1922",
+      "predicate": "AFFECTS",
+      "object": "Selection",
+      "evidence": "Selection in Google Chrome",
+      "description": "Inappropriate implementation in Selection in Google Chrome on Android prior to 134.0.6998.35 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
+      "annotation_notes": "'Android' treated as a platform qualifier, not a separately affected product. 'Selection' is a component of Chrome; vendor not inferred. Chromium severity label not annotated. [ADJUDICATE: Android; 'Selection' as component]"
+    },
+    {
+      "cve_id": "CVE-2025-20143",
+      "subject": "CVE-2025-20143",
+      "predicate": "AFFECTS",
+      "object": "Cisco IOS XR Software",
+      "evidence": "Cisco IOS XR Software",
+      "description": "A vulnerability in the boot process of Cisco IOS XR Software could allow an authenticated, local attacker with high privileges to bypass the Secure Boot functionality and load unverified software on an affected device. To exploit this vulnerability, the attacker must have root-system privileges on the affected device.\r\n\r\nThis vulnerability is due to insufficient verification of modules in the software load process. An attacker could exploit this vulnerability by manipulating the loaded binaries to bypass some of the integrity checks that are performed during the booting process. A successful exploit could allow the attacker to control the boot configuration, which could enable them to bypass the requirement to run Cisco-signed images or alter the security properties of the running system.\r\nNote: This vulnerability affects Cisco IOS XR Software, not the Secure Boot feature.\r\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
+      "annotation_notes": "The description explicitly says the 'Secure Boot feature' is NOT affected, so it is excluded."
+    },
+    {
+      "cve_id": "CVE-2025-20143",
+      "subject": "Cisco IOS XR Software",
+      "predicate": "MADE_BY",
+      "object": "Cisco",
+      "evidence": "Cisco IOS XR Software",
+      "description": "A vulnerability in the boot process of Cisco IOS XR Software could allow an authenticated, local attacker with high privileges to bypass the Secure Boot functionality and load unverified software on an affected device. To exploit this vulnerability, the attacker must have root-system privileges on the affected device.\r\n\r\nThis vulnerability is due to insufficient verification of modules in the software load process. An attacker could exploit this vulnerability by manipulating the loaded binaries to bypass some of the integrity checks that are performed during the booting process. A successful exploit could allow the attacker to control the boot configuration, which could enable them to bypass the requirement to run Cisco-signed images or alter the security properties of the running system.\r\nNote: This vulnerability affects Cisco IOS XR Software, not the Secure Boot feature.\r\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
+      "annotation_notes": "The description explicitly says the 'Secure Boot feature' is NOT affected, so it is excluded."
+    },
+    {
+      "cve_id": "CVE-2025-22218",
+      "subject": "CVE-2025-22218",
+      "predicate": "AFFECTS",
+      "object": "VMware Aria Operations for Logs",
+      "evidence": "VMware Aria Operations for Logs",
+      "description": "VMware Aria Operations for Logs contains an information disclosure vulnerability.\u00a0A malicious actor with View Only Admin permissions may be able to read the credentials\u00a0of a VMware product integrated with VMware Aria Operations for Logs",
+      "annotation_notes": "'a VMware product integrated with' it is an unnamed product; not annotated."
+    },
+    {
+      "cve_id": "CVE-2025-22218",
+      "subject": "VMware Aria Operations for Logs",
+      "predicate": "MADE_BY",
+      "object": "VMware",
+      "evidence": "VMware Aria Operations for Logs",
+      "description": "VMware Aria Operations for Logs contains an information disclosure vulnerability.\u00a0A malicious actor with View Only Admin permissions may be able to read the credentials\u00a0of a VMware product integrated with VMware Aria Operations for Logs",
+      "annotation_notes": "'a VMware product integrated with' it is an unnamed product; not annotated."
+    },
+    {
+      "cve_id": "CVE-2025-22224",
+      "subject": "CVE-2025-22224",
+      "predicate": "AFFECTS",
+      "object": "VMware ESXi",
+      "evidence": "VMware ESXi",
+      "description": "VMware ESXi, and Workstation\u00a0contain a TOCTOU (Time-of-Check Time-of-Use) vulnerability that leads to an out-of-bounds write.\u00a0A malicious actor with local administrative privileges on a virtual machine may exploit this issue to execute code as the virtual machine's VMX process running on the host.",
+      "annotation_notes": "'VMware ESXi, and Workstation': vendor for Workstation ambiguous (list distribution); none assigned. 'VMX process' is a runtime process where code executes, not clearly an affected component; not annotated. [ADJUDICATE: vendor distribution; VMX]"
+    },
+    {
+      "cve_id": "CVE-2025-22224",
+      "subject": "VMware ESXi",
+      "predicate": "MADE_BY",
+      "object": "VMware",
+      "evidence": "VMware ESXi",
+      "description": "VMware ESXi, and Workstation\u00a0contain a TOCTOU (Time-of-Check Time-of-Use) vulnerability that leads to an out-of-bounds write.\u00a0A malicious actor with local administrative privileges on a virtual machine may exploit this issue to execute code as the virtual machine's VMX process running on the host.",
+      "annotation_notes": "'VMware ESXi, and Workstation': vendor for Workstation ambiguous (list distribution); none assigned. 'VMX process' is a runtime process where code executes, not clearly an affected component; not annotated. [ADJUDICATE: vendor distribution; VMX]"
+    },
+    {
+      "cve_id": "CVE-2025-22224",
+      "subject": "CVE-2025-22224",
+      "predicate": "AFFECTS",
+      "object": "Workstation",
+      "evidence": "Workstation",
+      "description": "VMware ESXi, and Workstation\u00a0contain a TOCTOU (Time-of-Check Time-of-Use) vulnerability that leads to an out-of-bounds write.\u00a0A malicious actor with local administrative privileges on a virtual machine may exploit this issue to execute code as the virtual machine's VMX process running on the host.",
+      "annotation_notes": "'VMware ESXi, and Workstation': vendor for Workstation ambiguous (list distribution); none assigned. 'VMX process' is a runtime process where code executes, not clearly an affected component; not annotated. [ADJUDICATE: vendor distribution; VMX]"
+    },
+    {
+      "cve_id": "CVE-2025-24154",
+      "subject": "CVE-2025-24154",
+      "predicate": "AFFECTS",
+      "object": "iOS",
+      "evidence": "iOS 18.3",
+      "description": "An out-of-bounds write was addressed with improved input validation. This issue is fixed in iOS 18.3 and iPadOS 18.3, macOS Sequoia 15.3, macOS Sonoma 14.7.3, macOS Ventura 13.7.3, visionOS 2.3. An attacker may be able to cause unexpected system termination or corrupt kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-24154",
+      "subject": "CVE-2025-24154",
+      "predicate": "AFFECTS",
+      "object": "iPadOS",
+      "evidence": "iPadOS 18.3",
+      "description": "An out-of-bounds write was addressed with improved input validation. This issue is fixed in iOS 18.3 and iPadOS 18.3, macOS Sequoia 15.3, macOS Sonoma 14.7.3, macOS Ventura 13.7.3, visionOS 2.3. An attacker may be able to cause unexpected system termination or corrupt kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-24154",
+      "subject": "CVE-2025-24154",
+      "predicate": "AFFECTS",
+      "object": "macOS Sequoia",
+      "evidence": "macOS Sequoia 15.3",
+      "description": "An out-of-bounds write was addressed with improved input validation. This issue is fixed in iOS 18.3 and iPadOS 18.3, macOS Sequoia 15.3, macOS Sonoma 14.7.3, macOS Ventura 13.7.3, visionOS 2.3. An attacker may be able to cause unexpected system termination or corrupt kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-24154",
+      "subject": "CVE-2025-24154",
+      "predicate": "AFFECTS",
+      "object": "macOS Sonoma",
+      "evidence": "macOS Sonoma 14.7.3",
+      "description": "An out-of-bounds write was addressed with improved input validation. This issue is fixed in iOS 18.3 and iPadOS 18.3, macOS Sequoia 15.3, macOS Sonoma 14.7.3, macOS Ventura 13.7.3, visionOS 2.3. An attacker may be able to cause unexpected system termination or corrupt kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-24154",
+      "subject": "CVE-2025-24154",
+      "predicate": "AFFECTS",
+      "object": "macOS Ventura",
+      "evidence": "macOS Ventura 13.7.3",
+      "description": "An out-of-bounds write was addressed with improved input validation. This issue is fixed in iOS 18.3 and iPadOS 18.3, macOS Sequoia 15.3, macOS Sonoma 14.7.3, macOS Ventura 13.7.3, visionOS 2.3. An attacker may be able to cause unexpected system termination or corrupt kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-24154",
+      "subject": "CVE-2025-24154",
+      "predicate": "AFFECTS",
+      "object": "visionOS",
+      "evidence": "visionOS 2.3",
+      "description": "An out-of-bounds write was addressed with improved input validation. This issue is fixed in iOS 18.3 and iPadOS 18.3, macOS Sequoia 15.3, macOS Sonoma 14.7.3, macOS Ventura 13.7.3, visionOS 2.3. An attacker may be able to cause unexpected system termination or corrupt kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-27745",
+      "subject": "CVE-2025-27745",
+      "predicate": "AFFECTS",
+      "object": "Microsoft Office",
+      "evidence": "Microsoft Office",
+      "description": "Use after free in Microsoft Office allows an unauthorized attacker to execute code locally.",
+      "annotation_notes": "Vendor Microsoft from explicit 'Microsoft Office' branding."
+    },
+    {
+      "cve_id": "CVE-2025-27745",
+      "subject": "Microsoft Office",
+      "predicate": "MADE_BY",
+      "object": "Microsoft",
+      "evidence": "Microsoft Office",
+      "description": "Use after free in Microsoft Office allows an unauthorized attacker to execute code locally.",
+      "annotation_notes": "Vendor Microsoft from explicit 'Microsoft Office' branding."
+    },
+    {
+      "cve_id": "CVE-2025-30400",
+      "subject": "CVE-2025-30400",
+      "predicate": "AFFECTS",
+      "object": "Windows DWM",
+      "evidence": "Windows DWM",
+      "description": "Use after free in Windows DWM allows an authorized attacker to elevate privileges locally.",
+      "annotation_notes": "Could be Windows + DWM; kept as written. No vendor stated."
+    },
+    {
+      "cve_id": "CVE-2025-43300",
+      "subject": "CVE-2025-43300",
+      "predicate": "AFFECTS",
+      "object": "iOS",
+      "evidence": "iOS 15.8.5",
+      "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 15.8.5 and iPadOS 15.8.5, iOS 16.7.12 and iPadOS 16.7.12, iOS 18.6.2 and iPadOS 18.6.2, iPadOS 17.7.10, macOS Sequoia 15.6.1, macOS Sonoma 14.7.8, macOS Ventura 13.7.8. Processing a malicious image file may result in memory corruption. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals.",
+      "annotation_notes": "Only fixed versions listed. 'Apple is aware' is not product branding; vendors empty. [ADJUDICATE: Apple vendor policy]"
+    },
+    {
+      "cve_id": "CVE-2025-43300",
+      "subject": "CVE-2025-43300",
+      "predicate": "AFFECTS",
+      "object": "iPadOS",
+      "evidence": "iPadOS 15.8.5",
+      "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 15.8.5 and iPadOS 15.8.5, iOS 16.7.12 and iPadOS 16.7.12, iOS 18.6.2 and iPadOS 18.6.2, iPadOS 17.7.10, macOS Sequoia 15.6.1, macOS Sonoma 14.7.8, macOS Ventura 13.7.8. Processing a malicious image file may result in memory corruption. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals.",
+      "annotation_notes": "Only fixed versions listed. 'Apple is aware' is not product branding; vendors empty. [ADJUDICATE: Apple vendor policy]"
+    },
+    {
+      "cve_id": "CVE-2025-43300",
+      "subject": "CVE-2025-43300",
+      "predicate": "AFFECTS",
+      "object": "macOS Sequoia",
+      "evidence": "macOS Sequoia 15.6.1",
+      "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 15.8.5 and iPadOS 15.8.5, iOS 16.7.12 and iPadOS 16.7.12, iOS 18.6.2 and iPadOS 18.6.2, iPadOS 17.7.10, macOS Sequoia 15.6.1, macOS Sonoma 14.7.8, macOS Ventura 13.7.8. Processing a malicious image file may result in memory corruption. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals.",
+      "annotation_notes": "Only fixed versions listed. 'Apple is aware' is not product branding; vendors empty. [ADJUDICATE: Apple vendor policy]"
+    },
+    {
+      "cve_id": "CVE-2025-43300",
+      "subject": "CVE-2025-43300",
+      "predicate": "AFFECTS",
+      "object": "macOS Sonoma",
+      "evidence": "macOS Sonoma 14.7.8",
+      "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 15.8.5 and iPadOS 15.8.5, iOS 16.7.12 and iPadOS 16.7.12, iOS 18.6.2 and iPadOS 18.6.2, iPadOS 17.7.10, macOS Sequoia 15.6.1, macOS Sonoma 14.7.8, macOS Ventura 13.7.8. Processing a malicious image file may result in memory corruption. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals.",
+      "annotation_notes": "Only fixed versions listed. 'Apple is aware' is not product branding; vendors empty. [ADJUDICATE: Apple vendor policy]"
+    },
+    {
+      "cve_id": "CVE-2025-43300",
+      "subject": "CVE-2025-43300",
+      "predicate": "AFFECTS",
+      "object": "macOS Ventura",
+      "evidence": "macOS Ventura 13.7.8",
+      "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 15.8.5 and iPadOS 15.8.5, iOS 16.7.12 and iPadOS 16.7.12, iOS 18.6.2 and iPadOS 18.6.2, iPadOS 17.7.10, macOS Sequoia 15.6.1, macOS Sonoma 14.7.8, macOS Ventura 13.7.8. Processing a malicious image file may result in memory corruption. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals.",
+      "annotation_notes": "Only fixed versions listed. 'Apple is aware' is not product branding; vendors empty. [ADJUDICATE: Apple vendor policy]"
+    },
+    {
+      "cve_id": "CVE-2025-43520",
+      "subject": "CVE-2025-43520",
+      "predicate": "AFFECTS",
+      "object": "iOS",
+      "evidence": "iOS 18.7.2",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.2 and iPadOS 18.7.2, iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1, watchOS 26.1. A malicious application may be able to cause unexpected system termination or write kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-43520",
+      "subject": "CVE-2025-43520",
+      "predicate": "AFFECTS",
+      "object": "iPadOS",
+      "evidence": "iPadOS 18.7.2",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.2 and iPadOS 18.7.2, iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1, watchOS 26.1. A malicious application may be able to cause unexpected system termination or write kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-43520",
+      "subject": "CVE-2025-43520",
+      "predicate": "AFFECTS",
+      "object": "macOS Sequoia",
+      "evidence": "macOS Sequoia 15.7.2",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.2 and iPadOS 18.7.2, iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1, watchOS 26.1. A malicious application may be able to cause unexpected system termination or write kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-43520",
+      "subject": "CVE-2025-43520",
+      "predicate": "AFFECTS",
+      "object": "macOS Sonoma",
+      "evidence": "macOS Sonoma 14.8.2",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.2 and iPadOS 18.7.2, iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1, watchOS 26.1. A malicious application may be able to cause unexpected system termination or write kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-43520",
+      "subject": "CVE-2025-43520",
+      "predicate": "AFFECTS",
+      "object": "macOS Tahoe",
+      "evidence": "macOS Tahoe 26.1",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.2 and iPadOS 18.7.2, iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1, watchOS 26.1. A malicious application may be able to cause unexpected system termination or write kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-43520",
+      "subject": "CVE-2025-43520",
+      "predicate": "AFFECTS",
+      "object": "tvOS",
+      "evidence": "tvOS 26.1",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.2 and iPadOS 18.7.2, iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1, watchOS 26.1. A malicious application may be able to cause unexpected system termination or write kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-43520",
+      "subject": "CVE-2025-43520",
+      "predicate": "AFFECTS",
+      "object": "visionOS",
+      "evidence": "visionOS 26.1",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.2 and iPadOS 18.7.2, iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1, watchOS 26.1. A malicious application may be able to cause unexpected system termination or write kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-43520",
+      "subject": "CVE-2025-43520",
+      "predicate": "AFFECTS",
+      "object": "watchOS",
+      "evidence": "watchOS 26.1",
+      "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.2 and iPadOS 18.7.2, iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1, watchOS 26.1. A malicious application may be able to cause unexpected system termination or write kernel memory.",
+      "annotation_notes": "Only fixed versions listed; fixed-in products treated as affected. No vendor statement in text."
+    },
+    {
+      "cve_id": "CVE-2025-6558",
+      "subject": "CVE-2025-6558",
+      "predicate": "AFFECTS",
+      "object": "Google Chrome",
+      "evidence": "Google Chrome",
+      "description": "Insufficient validation of untrusted input in ANGLE and GPU in Google Chrome prior to 138.0.7204.157 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+      "annotation_notes": "'ANGLE and GPU' are named Chrome components; 'GPU' alone is borderline generic. Component vendors not inferred. [ADJUDICATE: GPU as component]"
+    },
+    {
+      "cve_id": "CVE-2025-6558",
+      "subject": "Google Chrome",
+      "predicate": "MADE_BY",
+      "object": "Google",
+      "evidence": "Google Chrome",
+      "description": "Insufficient validation of untrusted input in ANGLE and GPU in Google Chrome prior to 138.0.7204.157 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+      "annotation_notes": "'ANGLE and GPU' are named Chrome components; 'GPU' alone is borderline generic. Component vendors not inferred. [ADJUDICATE: GPU as component]"
+    },
+    {
+      "cve_id": "CVE-2025-6558",
+      "subject": "CVE-2025-6558",
+      "predicate": "AFFECTS",
+      "object": "ANGLE",
+      "evidence": "ANGLE and GPU in Google Chrome",
+      "description": "Insufficient validation of untrusted input in ANGLE and GPU in Google Chrome prior to 138.0.7204.157 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+      "annotation_notes": "'ANGLE and GPU' are named Chrome components; 'GPU' alone is borderline generic. Component vendors not inferred. [ADJUDICATE: GPU as component]"
+    },
+    {
+      "cve_id": "CVE-2025-6558",
+      "subject": "CVE-2025-6558",
+      "predicate": "AFFECTS",
+      "object": "GPU",
+      "evidence": "ANGLE and GPU in Google Chrome",
+      "description": "Insufficient validation of untrusted input in ANGLE and GPU in Google Chrome prior to 138.0.7204.157 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+      "annotation_notes": "'ANGLE and GPU' are named Chrome components; 'GPU' alone is borderline generic. Component vendors not inferred. [ADJUDICATE: GPU as component]"
+    }
+  ]
+}

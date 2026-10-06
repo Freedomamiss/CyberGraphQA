@@ -1,0 +1,38 @@
+{
+  "status": "framework_not_executed",
+  "framework": "ragas",
+  "target_version": "0.2.14",
+  "metrics": [
+    "Faithfulness",
+    "ResponseRelevancy",
+    "LLMContextRecall"
+  ],
+  "judge": "separately pinned Ollama model, exact digest required before use",
+  "judge_requests": "explicit separate evaluation job, no automatic calls during tests",
+  "judge_temperature": 0,
+  "judge_max_retries": 0,
+  "max_workers": 1,
+  "timeout_seconds": 180,
+  "max_metric_requests_per_case": 6,
+  "cache_key_fields": [
+    "framework_version",
+    "metric_prompt_sha256",
+    "judge_digest",
+    "input_sha256"
+  ],
+  "inputs": [
+    "user_input",
+    "response",
+    "retrieved_contexts",
+    "reference"
+  ],
+  "llm_only_faithfulness": "N/A: no supplied contexts",
+  "failed_protocol_primary": "accepted response empty; expected source claims remain FN",
+  "human_raters": 1,
+  "human_rating_status": "not_performed",
+  "human_axes": [
+    "factuality",
+    "completeness",
+    "coherence"
+  ]
+}

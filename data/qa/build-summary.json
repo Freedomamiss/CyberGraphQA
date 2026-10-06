@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "built_and_parity_checked",
+  "snapshot_id": "cgqa-5495aa3949d0b789",
+  "records": 150,
+  "node_counts": {
+    "CVE": 150,
+    "CWE": 49,
+    "Product": 164,
+    "Severity": 4,
+    "Vendor": 6
+  },
+  "edge_counts": {
+    "AFFECTS": 508,
+    "HAS_SEVERITY": 150,
+    "HAS_WEAKNESS": 138,
+    "MADE_BY": 164
+  },
+  "evidence_units": 2054,
+  "text_graph_units_identical": true,
+  "model_requests_sent": 0,
+  "qa_experiment_run": false,
+  "llm_extraction_graph": false,
+  "human_gold": false,
+  "source_conflicts_adjudicated": false,
+  "input_sha256": {
+    "data/processed/cves.json": "656a56ec884c39168cad87ab0ff10281ada2a747a5ddb2ecf76fe6fe9e60f319",
+    "data/processed/cves.csv": "1407dfb2f03804271aa660559627dcd7e869d1cdd2d91985c6993afd26fc6250",
+    "data/processed/extraction_inputs.jsonl": "4d74ed3c2f4efa0414a9abec881ab7a40c11fdee28b02fc0afb7c9e29ad6ae09",
+    "data/raw/full/selection.json": "afd0b3e967e01451f691fa11f7995bca66c89c254776475f8021a835f308299f",
+    "data/raw/pilot/kev.json": "41a998d171e4b29a27c254d840737431429bccee581a9c84c79c355ea3ad9ce1"
+  },
+  "builder_sha256": "148fa242e1c04d44a91645a5576a9c9ce4cb6e25b3962baaed4b806b6d56b1cf",
+  "output_sha256": {
+    "graph.json": "195b79ba16629685caab7679bf4e9f50a91ecb48a48f73a3f48811c9eb48b550",
+    "text-documents.jsonl": "6ec8a3f85b12974ae7808d38c7ab54a022ec09087bab0372a16ffdcb4fc0ebc3",
+    "inspection.json": "344d09773c24b64e8bf535f2fa2a138e7d5784a5cb5210026dd5379961422ebb"
+  },
+  "retrieval_adapter_ready": false,
+  "note": "Schema 2 requires a new retrieval adapter and index. Do not use the literal pilot index."
+}

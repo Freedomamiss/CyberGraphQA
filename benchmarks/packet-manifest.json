@@ -1,0 +1,12 @@
+{
+  "protocol_id": "source-derived-qa-evaluation-v1",
+  "output_sha256": {
+    "SCORING_RULES.md": "da76c522380de9da1aa2bc4ca79530de106614f4c4e3c73f1f5c5c7098f40d62",
+    "protocol-lock.json": "a6e085f7ac10aadac17bb65b34a64c59420cdae0a7ae94736c710fbe38cf577a",
+    "questions.json": "133cf58b33ff497484c739b8c9990ce5d2a30585757afb6df56f90ebbbad5cbf",
+    "source-reference.json": "1e6e0778f39fd52bf6a13f0f618e764c9ff79d44e9ae96b4f9fbc3f761d8af21"
+  },
+  "model_requests_sent": 0,
+  "human_gold": false,
+  "held_out_benchmark": false
+}

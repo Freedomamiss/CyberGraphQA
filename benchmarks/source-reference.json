@@ -1,0 +1,1441 @@
+[
+  {
+    "question_id": "QA-001",
+    "cve_id": "CVE-2023-32434",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:185b7d7df7cf99d28f8cf2d9",
+        "name": "watchOS [vendor: Apple]",
+        "support_evidence_ids": [
+          "source:7b13f9a40bc9eb1064ef62ad"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:289754990b8f0bd31d7394c4",
+        "name": "iOS and iPadOS [vendor: Apple]",
+        "support_evidence_ids": [
+          "source:668227eb702ff8181f7e808d"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:be6758a45f0d9200e5a70bb7",
+        "name": "macOS [vendor: Apple]",
+        "support_evidence_ids": [
+          "source:bafdbeeee6ca2f25444b3936"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:3a7bd3e2360a3d29eea436fc",
+        "name": "Apple",
+        "support_evidence_ids": [
+          "source:3bd16e1bd863b4f4906d9d7a",
+          "source:668227eb702ff8181f7e808d",
+          "source:7b13f9a40bc9eb1064ef62ad",
+          "source:a672571c96e9de357bf6273d",
+          "source:bafdbeeee6ca2f25444b3936",
+          "source:c22734ec0cd6580cb9d28208"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2023-32434",
+          "product:185b7d7df7cf99d28f8cf2d9",
+          "vendor:3a7bd3e2360a3d29eea436fc"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:7b13f9a40bc9eb1064ef62ad"
+        ],
+        "made_by_evidence_ids": [
+          "source:c22734ec0cd6580cb9d28208"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2023-32434",
+          "product:289754990b8f0bd31d7394c4",
+          "vendor:3a7bd3e2360a3d29eea436fc"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:668227eb702ff8181f7e808d"
+        ],
+        "made_by_evidence_ids": [
+          "source:a672571c96e9de357bf6273d"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2023-32434",
+          "product:be6758a45f0d9200e5a70bb7",
+          "vendor:3a7bd3e2360a3d29eea436fc"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:bafdbeeee6ca2f25444b3936"
+        ],
+        "made_by_evidence_ids": [
+          "source:3bd16e1bd863b4f4906d9d7a"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-002",
+    "cve_id": "CVE-2022-20708",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:30c93551037934b1d46d2133",
+        "name": "Cisco Small Business RV Series Router Firmware [vendor: Cisco]",
+        "support_evidence_ids": [
+          "source:17366b00c83228035468c151"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:e73b79a0b10f8cdb6ac7dbe4",
+        "name": "Cisco",
+        "support_evidence_ids": [
+          "source:17366b00c83228035468c151",
+          "source:7179cb0d51c6d036e17b2b01"
+        ]
+      },
+      {
+        "kind": "weakness",
+        "entity_id": "cwe:652d5eadb2dd841300525a1a",
+        "name": "CWE-78",
+        "support_evidence_ids": [
+          "source:0f154bfc657e099ca0edbc8c"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2022-20708",
+          "product:30c93551037934b1d46d2133",
+          "vendor:e73b79a0b10f8cdb6ac7dbe4"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:17366b00c83228035468c151"
+        ],
+        "made_by_evidence_ids": [
+          "source:7179cb0d51c6d036e17b2b01"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [
+      "cvss_source_or_version_disagreement",
+      "cwe_source_disagreement"
+    ],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-003",
+    "cve_id": "CVE-2022-2856",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:cd09ea9d498c5962ac3b2e21",
+        "name": "Chrome [vendor: Google]",
+        "support_evidence_ids": [
+          "source:12c5ece02626344053206ad2"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:bbdefa2950f49882f295b128",
+        "name": "Google",
+        "support_evidence_ids": [
+          "source:12c5ece02626344053206ad2",
+          "source:cd87acd90f2ce832fd07aaab"
+        ]
+      },
+      {
+        "kind": "severity",
+        "entity_id": "severity:7c48dd672a68098c3a9dac57",
+        "name": "MEDIUM",
+        "support_evidence_ids": [
+          "source:8390860c5cc9ea97a05813ae"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2022-2856",
+          "product:cd09ea9d498c5962ac3b2e21",
+          "vendor:bbdefa2950f49882f295b128"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:12c5ece02626344053206ad2"
+        ],
+        "made_by_evidence_ids": [
+          "source:cd87acd90f2ce832fd07aaab"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-004",
+    "cve_id": "CVE-2024-29824",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:0fc6f6def88b72de899b7e3d",
+        "name": "EPM [vendor: Ivanti]",
+        "support_evidence_ids": [
+          "source:b1023d4a5f7dc962c49ed719"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:60a539de7bb08a2287d0f7c6",
+        "name": "Ivanti",
+        "support_evidence_ids": [
+          "source:96078b26273dbedb273da44a",
+          "source:b1023d4a5f7dc962c49ed719"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2024-29824",
+          "product:0fc6f6def88b72de899b7e3d",
+          "vendor:60a539de7bb08a2287d0f7c6"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:b1023d4a5f7dc962c49ed719"
+        ],
+        "made_by_evidence_ids": [
+          "source:96078b26273dbedb273da44a"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [
+      "cvss_source_or_version_disagreement"
+    ],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-005",
+    "cve_id": "CVE-2021-27059",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:4f3d0b33319ea613238dea52",
+        "name": "Microsoft Office 2013 Service Pack 1 [vendor: Microsoft]",
+        "support_evidence_ids": [
+          "source:5166ecd4041bb5df58212b76"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:a62d15e79f2379cc24b36d90",
+        "name": "Microsoft Office 2016 [vendor: Microsoft]",
+        "support_evidence_ids": [
+          "source:9a35e5f82e6f5d08f926f9ed"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:ad3174cdbdebd5d80224da38",
+        "name": "Microsoft Office 2010 Service Pack 2 [vendor: Microsoft]",
+        "support_evidence_ids": [
+          "source:9d9104061b2506d708e47875"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:9fbf261b62c1d7c00db73afb",
+        "name": "Microsoft",
+        "support_evidence_ids": [
+          "source:5166ecd4041bb5df58212b76",
+          "source:52f3cf169c64dcaee24fb72c",
+          "source:9a35e5f82e6f5d08f926f9ed",
+          "source:9d9104061b2506d708e47875",
+          "source:d1ff9dc95fb8184bce2ca640",
+          "source:e5ec1b5aef19ee2918267c86"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2021-27059",
+          "product:4f3d0b33319ea613238dea52",
+          "vendor:9fbf261b62c1d7c00db73afb"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:5166ecd4041bb5df58212b76"
+        ],
+        "made_by_evidence_ids": [
+          "source:e5ec1b5aef19ee2918267c86"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2021-27059",
+          "product:a62d15e79f2379cc24b36d90",
+          "vendor:9fbf261b62c1d7c00db73afb"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:9a35e5f82e6f5d08f926f9ed"
+        ],
+        "made_by_evidence_ids": [
+          "source:52f3cf169c64dcaee24fb72c"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2021-27059",
+          "product:ad3174cdbdebd5d80224da38",
+          "vendor:9fbf261b62c1d7c00db73afb"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:9d9104061b2506d708e47875"
+        ],
+        "made_by_evidence_ids": [
+          "source:d1ff9dc95fb8184bce2ca640"
+        ]
+      }
+    ],
+    "requested_metadata_missing": true,
+    "conflict_flags": [
+      "cvss_source_or_version_disagreement"
+    ],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-006",
+    "cve_id": "CVE-2022-22948",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:a6ee1704a30f8c750dd1c412",
+        "name": "vCenter Server [vendor: VMware]",
+        "support_evidence_ids": [
+          "source:5d07b14b55738c509dc9cc6e"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:592cc302663c0021ffa92186",
+        "name": "VMware",
+        "support_evidence_ids": [
+          "source:09aa8f41ca20726dac5883c2",
+          "source:5d07b14b55738c509dc9cc6e"
+        ]
+      },
+      {
+        "kind": "severity",
+        "entity_id": "severity:7c48dd672a68098c3a9dac57",
+        "name": "MEDIUM",
+        "support_evidence_ids": [
+          "source:7b14309b2bb452c9ec72b37b"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2022-22948",
+          "product:a6ee1704a30f8c750dd1c412",
+          "vendor:592cc302663c0021ffa92186"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:5d07b14b55738c509dc9cc6e"
+        ],
+        "made_by_evidence_ids": [
+          "source:09aa8f41ca20726dac5883c2"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [
+      "kev_pair_used_for_missing_cna_pair",
+      "placeholder_affected_pairs_omitted"
+    ],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-007",
+    "cve_id": "CVE-2025-24260",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:be6758a45f0d9200e5a70bb7",
+        "name": "macOS [vendor: Apple]",
+        "support_evidence_ids": [
+          "source:6e29226f2b0a08b6a02955f8"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:3a7bd3e2360a3d29eea436fc",
+        "name": "Apple",
+        "support_evidence_ids": [
+          "source:6e29226f2b0a08b6a02955f8",
+          "source:9dec2ef9fb7ece7e1a90d13b"
+        ]
+      },
+      {
+        "kind": "weakness",
+        "entity_id": "cwe:0e3dabf64a71b5c9c399782a",
+        "name": "CWE-400",
+        "support_evidence_ids": [
+          "source:a943c269b30704c0736f8b68"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2025-24260",
+          "product:be6758a45f0d9200e5a70bb7",
+          "vendor:3a7bd3e2360a3d29eea436fc"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:6e29226f2b0a08b6a02955f8"
+        ],
+        "made_by_evidence_ids": [
+          "source:9dec2ef9fb7ece7e1a90d13b"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-008",
+    "cve_id": "CVE-2025-20173",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:4f7bb8367dc45f92444bfeb8",
+        "name": "Cisco IOS XE Software [vendor: Cisco]",
+        "support_evidence_ids": [
+          "source:eed677e0a6a56182ddd023d6"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:5a8fa127e70291cca69eaacd",
+        "name": "IOS [vendor: Cisco]",
+        "support_evidence_ids": [
+          "source:5b3f71f1e04b0a6203ea41bd"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:e73b79a0b10f8cdb6ac7dbe4",
+        "name": "Cisco",
+        "support_evidence_ids": [
+          "source:5b3f71f1e04b0a6203ea41bd",
+          "source:9f39ea4ecd396e54e00a4263",
+          "source:cee64c8b9809b1428a27720c",
+          "source:eed677e0a6a56182ddd023d6"
+        ]
+      },
+      {
+        "kind": "severity",
+        "entity_id": "severity:b43e72eed0488d784f1e3092",
+        "name": "HIGH",
+        "support_evidence_ids": [
+          "source:72957699fe6ce1d13664d526"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2025-20173",
+          "product:4f7bb8367dc45f92444bfeb8",
+          "vendor:e73b79a0b10f8cdb6ac7dbe4"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:eed677e0a6a56182ddd023d6"
+        ],
+        "made_by_evidence_ids": [
+          "source:9f39ea4ecd396e54e00a4263"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2025-20173",
+          "product:5a8fa127e70291cca69eaacd",
+          "vendor:e73b79a0b10f8cdb6ac7dbe4"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:5b3f71f1e04b0a6203ea41bd"
+        ],
+        "made_by_evidence_ids": [
+          "source:cee64c8b9809b1428a27720c"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-009",
+    "cve_id": "CVE-2022-3075",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:cd09ea9d498c5962ac3b2e21",
+        "name": "Chrome [vendor: Google]",
+        "support_evidence_ids": [
+          "source:05ff73e23c4391bc2b257359"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:bbdefa2950f49882f295b128",
+        "name": "Google",
+        "support_evidence_ids": [
+          "source:05ff73e23c4391bc2b257359",
+          "source:879b6ded264be8e24e87b8be"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2022-3075",
+          "product:cd09ea9d498c5962ac3b2e21",
+          "vendor:bbdefa2950f49882f295b128"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:05ff73e23c4391bc2b257359"
+        ],
+        "made_by_evidence_ids": [
+          "source:879b6ded264be8e24e87b8be"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-010",
+    "cve_id": "CVE-2024-38657",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:dee4749370154824b053b66f",
+        "name": "Policy Secure [vendor: Ivanti]",
+        "support_evidence_ids": [
+          "source:4facec9b823e5a77a4222e2d"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:e452b429d44dd7b0ed7b7a96",
+        "name": "Connect Secure [vendor: Ivanti]",
+        "support_evidence_ids": [
+          "source:bbf73b66351c56dc79087a6b"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:60a539de7bb08a2287d0f7c6",
+        "name": "Ivanti",
+        "support_evidence_ids": [
+          "source:4facec9b823e5a77a4222e2d",
+          "source:a4f92bd396a610565f054b1d",
+          "source:b9e9f99ad9d27594827f362e",
+          "source:bbf73b66351c56dc79087a6b"
+        ]
+      },
+      {
+        "kind": "weakness",
+        "entity_id": "cwe:818cbfad9862399f375526fb",
+        "name": "CWE-73",
+        "support_evidence_ids": [
+          "source:ec1fcfa5216efc47d21c01a7"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2024-38657",
+          "product:dee4749370154824b053b66f",
+          "vendor:60a539de7bb08a2287d0f7c6"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:4facec9b823e5a77a4222e2d"
+        ],
+        "made_by_evidence_ids": [
+          "source:b9e9f99ad9d27594827f362e"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2024-38657",
+          "product:e452b429d44dd7b0ed7b7a96",
+          "vendor:60a539de7bb08a2287d0f7c6"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:bbf73b66351c56dc79087a6b"
+        ],
+        "made_by_evidence_ids": [
+          "source:a4f92bd396a610565f054b1d"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [
+      "cvss_source_or_version_disagreement"
+    ],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-011",
+    "cve_id": "CVE-2025-29794",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:17f091d23e56afd1cf91b4df",
+        "name": "Microsoft SharePoint Enterprise Server 2016 [vendor: Microsoft]",
+        "support_evidence_ids": [
+          "source:1e5b0eaa5027c595444b8772"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:52328c6f5d798825a00f8933",
+        "name": "Microsoft SharePoint Server Subscription Edition [vendor: Microsoft]",
+        "support_evidence_ids": [
+          "source:3d3e2b164d2beb169ca9b1b5"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:557c8b5af9525a683a49df07",
+        "name": "Microsoft SharePoint Server 2019 [vendor: Microsoft]",
+        "support_evidence_ids": [
+          "source:aeb10da0ded1b822f7f0cb58"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:9fbf261b62c1d7c00db73afb",
+        "name": "Microsoft",
+        "support_evidence_ids": [
+          "source:1e5b0eaa5027c595444b8772",
+          "source:3d3e2b164d2beb169ca9b1b5",
+          "source:787d9b25c3e4a3cfccf05916",
+          "source:8234cdcb01094554a9ff0b1b",
+          "source:aeb10da0ded1b822f7f0cb58",
+          "source:e080a7a65f9840b03eef5362"
+        ]
+      },
+      {
+        "kind": "severity",
+        "entity_id": "severity:b43e72eed0488d784f1e3092",
+        "name": "HIGH",
+        "support_evidence_ids": [
+          "source:a44064bd2a7510ab8220d1f4"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2025-29794",
+          "product:17f091d23e56afd1cf91b4df",
+          "vendor:9fbf261b62c1d7c00db73afb"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:1e5b0eaa5027c595444b8772"
+        ],
+        "made_by_evidence_ids": [
+          "source:787d9b25c3e4a3cfccf05916"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2025-29794",
+          "product:52328c6f5d798825a00f8933",
+          "vendor:9fbf261b62c1d7c00db73afb"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:3d3e2b164d2beb169ca9b1b5"
+        ],
+        "made_by_evidence_ids": [
+          "source:e080a7a65f9840b03eef5362"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2025-29794",
+          "product:557c8b5af9525a683a49df07",
+          "vendor:9fbf261b62c1d7c00db73afb"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:aeb10da0ded1b822f7f0cb58"
+        ],
+        "made_by_evidence_ids": [
+          "source:8234cdcb01094554a9ff0b1b"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-012",
+    "cve_id": "CVE-2024-38812",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:a6ee1704a30f8c750dd1c412",
+        "name": "vCenter Server [vendor: VMware]",
+        "support_evidence_ids": [
+          "source:543afc463d4b9d31a6c6eaa5"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:592cc302663c0021ffa92186",
+        "name": "VMware",
+        "support_evidence_ids": [
+          "source:543afc463d4b9d31a6c6eaa5",
+          "source:7e8062a2541fadf814ce18ec"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2024-38812",
+          "product:a6ee1704a30f8c750dd1c412",
+          "vendor:592cc302663c0021ffa92186"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:543afc463d4b9d31a6c6eaa5"
+        ],
+        "made_by_evidence_ids": [
+          "source:7e8062a2541fadf814ce18ec"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [
+      "cwe_source_disagreement",
+      "kev_pair_used_for_missing_cna_pair",
+      "placeholder_affected_pairs_omitted"
+    ],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-013",
+    "cve_id": "CVE-2022-32893",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:271d94a975a270b8c8abbee4",
+        "name": "Safari [vendor: Apple]",
+        "support_evidence_ids": [
+          "source:ad29cd436861804e446ff79f"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:289754990b8f0bd31d7394c4",
+        "name": "iOS and iPadOS [vendor: Apple]",
+        "support_evidence_ids": [
+          "source:8f607a82fc7bf94eeda22937"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:be6758a45f0d9200e5a70bb7",
+        "name": "macOS [vendor: Apple]",
+        "support_evidence_ids": [
+          "source:76b13d5149ff824bb797ac90"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:3a7bd3e2360a3d29eea436fc",
+        "name": "Apple",
+        "support_evidence_ids": [
+          "source:179d86d0ab6d9aa26af2fc8d",
+          "source:6181dd4a80456444a3aa4a04",
+          "source:76b13d5149ff824bb797ac90",
+          "source:8f607a82fc7bf94eeda22937",
+          "source:ad29cd436861804e446ff79f",
+          "source:cf86658b62be07d88948f5b3"
+        ]
+      },
+      {
+        "kind": "severity",
+        "entity_id": "severity:b43e72eed0488d784f1e3092",
+        "name": "HIGH",
+        "support_evidence_ids": [
+          "source:1c3bdc895193b381b3a108f6"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2022-32893",
+          "product:271d94a975a270b8c8abbee4",
+          "vendor:3a7bd3e2360a3d29eea436fc"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:ad29cd436861804e446ff79f"
+        ],
+        "made_by_evidence_ids": [
+          "source:cf86658b62be07d88948f5b3"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2022-32893",
+          "product:289754990b8f0bd31d7394c4",
+          "vendor:3a7bd3e2360a3d29eea436fc"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:8f607a82fc7bf94eeda22937"
+        ],
+        "made_by_evidence_ids": [
+          "source:6181dd4a80456444a3aa4a04"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2022-32893",
+          "product:be6758a45f0d9200e5a70bb7",
+          "vendor:3a7bd3e2360a3d29eea436fc"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:76b13d5149ff824bb797ac90"
+        ],
+        "made_by_evidence_ids": [
+          "source:179d86d0ab6d9aa26af2fc8d"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-014",
+    "cve_id": "CVE-2024-20481",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:4049849143e608c484ff16d2",
+        "name": "Cisco Adaptive Security Appliance (ASA) Software [vendor: Cisco]",
+        "support_evidence_ids": [
+          "source:c193476777a7838dc767a4b9"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:7bb9e23c750a845d48c514d3",
+        "name": "Cisco Firepower Threat Defense Software [vendor: Cisco]",
+        "support_evidence_ids": [
+          "source:311f81e9d73d3c70e690bc30"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:e73b79a0b10f8cdb6ac7dbe4",
+        "name": "Cisco",
+        "support_evidence_ids": [
+          "source:311f81e9d73d3c70e690bc30",
+          "source:4d5ee368d157313ba9831781",
+          "source:c193476777a7838dc767a4b9",
+          "source:cce960dbaf23d0e4a2c87f58"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2024-20481",
+          "product:4049849143e608c484ff16d2",
+          "vendor:e73b79a0b10f8cdb6ac7dbe4"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:c193476777a7838dc767a4b9"
+        ],
+        "made_by_evidence_ids": [
+          "source:cce960dbaf23d0e4a2c87f58"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2024-20481",
+          "product:7bb9e23c750a845d48c514d3",
+          "vendor:e73b79a0b10f8cdb6ac7dbe4"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:311f81e9d73d3c70e690bc30"
+        ],
+        "made_by_evidence_ids": [
+          "source:4d5ee368d157313ba9831781"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-015",
+    "cve_id": "CVE-2022-4262",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:cd09ea9d498c5962ac3b2e21",
+        "name": "Chrome [vendor: Google]",
+        "support_evidence_ids": [
+          "source:d700d72a513b9e55e339876b"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:bbdefa2950f49882f295b128",
+        "name": "Google",
+        "support_evidence_ids": [
+          "source:a0d1bdc6ea56ff09ffaeb9eb",
+          "source:d700d72a513b9e55e339876b"
+        ]
+      },
+      {
+        "kind": "weakness",
+        "entity_id": "cwe:65b86a6d5c9e54adde9e848a",
+        "name": "CWE-843",
+        "support_evidence_ids": [
+          "source:479dd6be7cebb0bc9c27145f"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2022-4262",
+          "product:cd09ea9d498c5962ac3b2e21",
+          "vendor:bbdefa2950f49882f295b128"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:d700d72a513b9e55e339876b"
+        ],
+        "made_by_evidence_ids": [
+          "source:a0d1bdc6ea56ff09ffaeb9eb"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-016",
+    "cve_id": "CVE-2024-8190",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:acbddf007d4c8e4a11d9d7bf",
+        "name": "CSA (Cloud Services Appliance) [vendor: Ivanti]",
+        "support_evidence_ids": [
+          "source:6894759f2fb7e0f7377c3001"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:60a539de7bb08a2287d0f7c6",
+        "name": "Ivanti",
+        "support_evidence_ids": [
+          "source:6894759f2fb7e0f7377c3001",
+          "source:807d33ad85f897d9d1f9c563"
+        ]
+      },
+      {
+        "kind": "severity",
+        "entity_id": "severity:b43e72eed0488d784f1e3092",
+        "name": "HIGH",
+        "support_evidence_ids": [
+          "source:9f74b2b31f3fc25e589b7831"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2024-8190",
+          "product:acbddf007d4c8e4a11d9d7bf",
+          "vendor:60a539de7bb08a2287d0f7c6"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:6894759f2fb7e0f7377c3001"
+        ],
+        "made_by_evidence_ids": [
+          "source:807d33ad85f897d9d1f9c563"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-017",
+    "cve_id": "CVE-2023-41763",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:4dab055cf5ba7e962cd6a263",
+        "name": "Skype for Business Server 2015 CU13 [vendor: Microsoft]",
+        "support_evidence_ids": [
+          "source:e692acee387504e44519dbf0"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:f0219c6f79833bf99c004c6e",
+        "name": "Skype for Business Server 2019 CU7 [vendor: Microsoft]",
+        "support_evidence_ids": [
+          "source:2970550be442a6e798e01656"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:9fbf261b62c1d7c00db73afb",
+        "name": "Microsoft",
+        "support_evidence_ids": [
+          "source:2970550be442a6e798e01656",
+          "source:51cd917650e7bbe771170591",
+          "source:e692acee387504e44519dbf0",
+          "source:ebaed4b693e8a81fc1702a57"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2023-41763",
+          "product:4dab055cf5ba7e962cd6a263",
+          "vendor:9fbf261b62c1d7c00db73afb"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:e692acee387504e44519dbf0"
+        ],
+        "made_by_evidence_ids": [
+          "source:51cd917650e7bbe771170591"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2023-41763",
+          "product:f0219c6f79833bf99c004c6e",
+          "vendor:9fbf261b62c1d7c00db73afb"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:2970550be442a6e798e01656"
+        ],
+        "made_by_evidence_ids": [
+          "source:ebaed4b693e8a81fc1702a57"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-018",
+    "cve_id": "CVE-2020-3992",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:f52794429f95cd9d519e849b",
+        "name": "ESXi [vendor: VMware]",
+        "support_evidence_ids": [
+          "source:2f879465e945afc259cafe59"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:592cc302663c0021ffa92186",
+        "name": "VMware",
+        "support_evidence_ids": [
+          "source:2f879465e945afc259cafe59",
+          "source:5dbfd8fa3cb9076d3378d3a3"
+        ]
+      },
+      {
+        "kind": "weakness",
+        "entity_id": "cwe:702fa1c6f3dfbf82c10ab576",
+        "name": "CWE-416",
+        "support_evidence_ids": [
+          "source:7659a0e0381df564f135cb2f"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2020-3992",
+          "product:f52794429f95cd9d519e849b",
+          "vendor:592cc302663c0021ffa92186"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:2f879465e945afc259cafe59"
+        ],
+        "made_by_evidence_ids": [
+          "source:5dbfd8fa3cb9076d3378d3a3"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [
+      "kev_pair_used_for_missing_cna_pair",
+      "placeholder_affected_pairs_omitted"
+    ],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-019",
+    "cve_id": "CVE-2021-31010",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:185b7d7df7cf99d28f8cf2d9",
+        "name": "watchOS [vendor: Apple]",
+        "support_evidence_ids": [
+          "source:bd4e13fcbc4780c4edd27ffa"
+        ]
+      },
+      {
+        "kind": "product",
+        "entity_id": "product:be6758a45f0d9200e5a70bb7",
+        "name": "macOS [vendor: Apple]",
+        "support_evidence_ids": [
+          "source:84d817e86dbfbd9be3e72580"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:3a7bd3e2360a3d29eea436fc",
+        "name": "Apple",
+        "support_evidence_ids": [
+          "source:84d817e86dbfbd9be3e72580",
+          "source:9e54244c41e974bab150edbf",
+          "source:bd4e13fcbc4780c4edd27ffa",
+          "source:d48167d7f1adc554defcc991"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2021-31010",
+          "product:185b7d7df7cf99d28f8cf2d9",
+          "vendor:3a7bd3e2360a3d29eea436fc"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:bd4e13fcbc4780c4edd27ffa"
+        ],
+        "made_by_evidence_ids": [
+          "source:d48167d7f1adc554defcc991"
+        ]
+      },
+      {
+        "nodes": [
+          "CVE-2021-31010",
+          "product:be6758a45f0d9200e5a70bb7",
+          "vendor:3a7bd3e2360a3d29eea436fc"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:84d817e86dbfbd9be3e72580"
+        ],
+        "made_by_evidence_ids": [
+          "source:9e54244c41e974bab150edbf"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  },
+  {
+    "question_id": "QA-020",
+    "cve_id": "CVE-2023-20198",
+    "expected_claims": [
+      {
+        "kind": "product",
+        "entity_id": "product:4f7bb8367dc45f92444bfeb8",
+        "name": "Cisco IOS XE Software [vendor: Cisco]",
+        "support_evidence_ids": [
+          "source:b48fbc75880254ca6708da3d"
+        ]
+      },
+      {
+        "kind": "vendor",
+        "entity_id": "vendor:e73b79a0b10f8cdb6ac7dbe4",
+        "name": "Cisco",
+        "support_evidence_ids": [
+          "source:63eee14a7f61119b23911fba",
+          "source:b48fbc75880254ca6708da3d"
+        ]
+      },
+      {
+        "kind": "weakness",
+        "entity_id": "cwe:3a887c9673949a5f7742c8fb",
+        "name": "CWE-420",
+        "support_evidence_ids": [
+          "source:fc56d80f3741a10c0ee75542"
+        ]
+      }
+    ],
+    "support_paths": [
+      {
+        "nodes": [
+          "CVE-2023-20198",
+          "product:4f7bb8367dc45f92444bfeb8",
+          "vendor:e73b79a0b10f8cdb6ac7dbe4"
+        ],
+        "predicates": [
+          "AFFECTS",
+          "MADE_BY"
+        ],
+        "hop_count": 2,
+        "affects_evidence_ids": [
+          "source:b48fbc75880254ca6708da3d"
+        ],
+        "made_by_evidence_ids": [
+          "source:63eee14a7f61119b23911fba"
+        ]
+      }
+    ],
+    "requested_metadata_missing": false,
+    "conflict_flags": [],
+    "source_conflicts_adjudicated": false,
+    "human_gold": false,
+    "reference_kind": "frozen_structured_source_reference"
+  }
+]

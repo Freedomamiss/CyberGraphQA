@@ -1,0 +1,4 @@
+# Separate optional environment; framework/training integration has not run.
+ragas==0.2.14
+# Existing embedding environment stays pinned by its original index manifest.
+# Node2Vec training backend/version must be locked before the embedding experiment.

@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "answer_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "claim",
+          "evidence_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "explanation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "answer_basis": {
+      "type": "string",
+      "enum": [
+        "supplied_evidence",
+        "prior_knowledge",
+        "insufficient_evidence"
+      ]
+    },
+    "abstain": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "answer_items",
+    "explanation",
+    "answer_basis",
+    "abstain"
+  ],
+  "additionalProperties": false
+}

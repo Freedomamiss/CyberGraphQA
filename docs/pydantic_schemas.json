@@ -1,0 +1,305 @@
+{
+  "Entity": {
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "minLength": 1,
+        "title": "Id",
+        "type": "string"
+      },
+      "name": {
+        "minLength": 1,
+        "title": "Name",
+        "type": "string"
+      },
+      "type": {
+        "enum": [
+          "CVE",
+          "Product",
+          "Vendor",
+          "CWE",
+          "Severity"
+        ],
+        "title": "Type",
+        "type": "string"
+      },
+      "attributes": {
+        "additionalProperties": true,
+        "title": "Attributes",
+        "type": "object"
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "type"
+    ],
+    "title": "Entity",
+    "type": "object"
+  },
+  "Relation": {
+    "additionalProperties": false,
+    "properties": {
+      "subject": {
+        "title": "Subject",
+        "type": "string"
+      },
+      "predicate": {
+        "enum": [
+          "AFFECTS",
+          "MADE_BY",
+          "HAS_WEAKNESS",
+          "HAS_SEVERITY"
+        ],
+        "title": "Predicate",
+        "type": "string"
+      },
+      "object": {
+        "title": "Object",
+        "type": "string"
+      },
+      "evidence_ids": {
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "title": "Evidence Ids",
+        "type": "array"
+      }
+    },
+    "required": [
+      "subject",
+      "predicate",
+      "object",
+      "evidence_ids"
+    ],
+    "title": "Relation",
+    "type": "object"
+  },
+  "GraphChunk": {
+    "$defs": {
+      "Entity": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "title": "Id",
+            "type": "string"
+          },
+          "name": {
+            "minLength": 1,
+            "title": "Name",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "CVE",
+              "Product",
+              "Vendor",
+              "CWE",
+              "Severity"
+            ],
+            "title": "Type",
+            "type": "string"
+          },
+          "attributes": {
+            "additionalProperties": true,
+            "title": "Attributes",
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "type"
+        ],
+        "title": "Entity",
+        "type": "object"
+      },
+      "Relation": {
+        "additionalProperties": false,
+        "properties": {
+          "subject": {
+            "title": "Subject",
+            "type": "string"
+          },
+          "predicate": {
+            "enum": [
+              "AFFECTS",
+              "MADE_BY",
+              "HAS_WEAKNESS",
+              "HAS_SEVERITY"
+            ],
+            "title": "Predicate",
+            "type": "string"
+          },
+          "object": {
+            "title": "Object",
+            "type": "string"
+          },
+          "evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "title": "Evidence Ids",
+            "type": "array"
+          }
+        },
+        "required": [
+          "subject",
+          "predicate",
+          "object",
+          "evidence_ids"
+        ],
+        "title": "Relation",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "snapshot_id": {
+        "title": "Snapshot Id",
+        "type": "string"
+      },
+      "origin": {
+        "enum": [
+          "frozen_structured_sources",
+          "model_candidate_development"
+        ],
+        "title": "Origin",
+        "type": "string"
+      },
+      "nodes": {
+        "items": {
+          "$ref": "#/$defs/Entity"
+        },
+        "title": "Nodes",
+        "type": "array"
+      },
+      "edges": {
+        "items": {
+          "$ref": "#/$defs/Relation"
+        },
+        "title": "Edges",
+        "type": "array"
+      }
+    },
+    "required": [
+      "snapshot_id",
+      "origin",
+      "nodes",
+      "edges"
+    ],
+    "title": "GraphChunk",
+    "type": "object"
+  },
+  "QueryPayload": {
+    "additionalProperties": false,
+    "properties": {
+      "question": {
+        "maxLength": 2000,
+        "minLength": 1,
+        "title": "Question",
+        "type": "string"
+      },
+      "mode": {
+        "default": "hybrid",
+        "enum": [
+          "llm-only",
+          "text",
+          "graph",
+          "hybrid"
+        ],
+        "title": "Mode",
+        "type": "string"
+      },
+      "snapshot_id": {
+        "default": "cgqa-5495aa3949d0b789",
+        "title": "Snapshot Id",
+        "type": "string"
+      },
+      "max_hops": {
+        "default": 2,
+        "maximum": 2,
+        "minimum": 1,
+        "title": "Max Hops",
+        "type": "integer"
+      },
+      "character_cap": {
+        "default": 6000,
+        "maximum": 6000,
+        "minimum": 1,
+        "title": "Character Cap",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "question"
+    ],
+    "title": "QueryPayload",
+    "type": "object"
+  },
+  "QAResponse": {
+    "$defs": {
+      "AnswerItem": {
+        "additionalProperties": false,
+        "properties": {
+          "claim": {
+            "minLength": 1,
+            "title": "Claim",
+            "type": "string"
+          },
+          "evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Evidence Ids",
+            "type": "array"
+          }
+        },
+        "required": [
+          "claim",
+          "evidence_ids"
+        ],
+        "title": "AnswerItem",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "answer_items": {
+        "items": {
+          "$ref": "#/$defs/AnswerItem"
+        },
+        "title": "Answer Items",
+        "type": "array"
+      },
+      "explanation": {
+        "title": "Explanation",
+        "type": "string"
+      },
+      "abstain": {
+        "title": "Abstain",
+        "type": "boolean"
+      },
+      "answer_basis": {
+        "enum": [
+          "supplied_evidence",
+          "prior_knowledge",
+          "insufficient_evidence"
+        ],
+        "title": "Answer Basis",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_items",
+      "explanation",
+      "abstain",
+      "answer_basis"
+    ],
+    "title": "QAResponse",
+    "type": "object"
+  }
+}

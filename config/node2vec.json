@@ -1,0 +1,18 @@
+{
+  "status": "specified_not_trained",
+  "dimensions": 64,
+  "walk_length": 40,
+  "walks_per_node": 10,
+  "p": 1.0,
+  "q": 0.5,
+  "window": 5,
+  "negative_samples": 5,
+  "epochs": 5,
+  "initial_learning_rate": 0.025,
+  "seed": 1337,
+  "workers": 1,
+  "edge_weight": 1.0,
+  "projection": "simple undirected projection; original directed graph retained",
+  "index": "FAISS IndexFlatIP on normalized 64-D vectors",
+  "query_bridge": "mean structural vectors of semantic node anchors; never compare 384-D query vectors to 64-D node vectors"
+}

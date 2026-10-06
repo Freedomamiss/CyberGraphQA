@@ -1,0 +1,746 @@
+{
+  "cve_id": "CVE-2020-16009",
+  "paths": [
+    {
+      "nodes": [
+        "CVE-2020-16009",
+        "Chrome [vendor: Google]"
+      ],
+      "predicates": [
+        "AFFECTS"
+      ],
+      "evidence_ids": [
+        "source:5a97929416861240039f3420"
+      ]
+    },
+    {
+      "nodes": [
+        "CVE-2020-16009",
+        "Chrome [vendor: Google]",
+        "Google"
+      ],
+      "predicates": [
+        "AFFECTS",
+        "MADE_BY"
+      ],
+      "evidence_ids": [
+        "source:5a97929416861240039f3420",
+        "source:a25e363162efab84bf2f5983"
+      ]
+    },
+    {
+      "nodes": [
+        "CVE-2020-16009",
+        "HIGH"
+      ],
+      "predicates": [
+        "HAS_SEVERITY"
+      ],
+      "evidence_ids": [
+        "source:d5c1178ee0308217b440b0f2"
+      ]
+    },
+    {
+      "nodes": [
+        "CVE-2020-16009",
+        "CWE-843"
+      ],
+      "predicates": [
+        "HAS_WEAKNESS"
+      ],
+      "evidence_ids": [
+        "source:285e799cfcb22f00ab5ed03a"
+      ]
+    },
+    {
+      "nodes": [
+        "CVE-2020-16009",
+        "CWE-787"
+      ],
+      "predicates": [
+        "HAS_WEAKNESS"
+      ],
+      "evidence_ids": [
+        "source:171c25580f1e9a789f9c3b94"
+      ]
+    }
+  ],
+  "evidence_units": [
+    {
+      "evidence_id": "source:171c25580f1e9a789f9c3b94",
+      "cve_id": "CVE-2020-16009",
+      "kind": "relation",
+      "value": {
+        "subject": "CVE-2020-16009",
+        "predicate": "HAS_WEAKNESS",
+        "object": "cwe:c61bd876f79d6a6ecc8ab811"
+      },
+      "origin": "frozen_structured_sources",
+      "snapshot_id": "cgqa-5495aa3949d0b789",
+      "canonical_source_sha256": "656a56ec884c39168cad87ab0ff10281ada2a747a5ddb2ecf76fe6fe9e60f319",
+      "provenance": {
+        "field": {
+          "accepted_ids": [
+            "CWE-787",
+            "CWE-843"
+          ],
+          "candidate_sources": [
+            {
+              "id": "CWE-843",
+              "source": "ADP:CISA-ADP",
+              "source_role": "CISA-ADP"
+            },
+            {
+              "id": "CWE-787",
+              "source": "ADP:CISA-ADP",
+              "source_role": "CISA-ADP"
+            },
+            {
+              "id": "CWE-787",
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "container": "NVD",
+              "source_role": "NVD"
+            },
+            {
+              "id": "CWE-843",
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "container": "NVD",
+              "source_role": "NVD"
+            },
+            {
+              "id": "CWE-787",
+              "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+              "type": "Secondary",
+              "container": "NVD",
+              "source_role": "CISA-ADP"
+            },
+            {
+              "id": "CWE-843",
+              "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+              "type": "Secondary",
+              "container": "NVD",
+              "source_role": "CISA-ADP"
+            }
+          ]
+        },
+        "nvd_record": {
+          "raw_file": "data/raw/full/nvd_kev_pool.json",
+          "field_path": "vulnerabilities[672].cve"
+        },
+        "cna_raw_file": "data/raw/full/cna/CVE-2020-16009.json"
+      },
+      "source_urls": [
+        "https://raw.githubusercontent.com/CVEProject/cvelistV5/562df31f0be1dd1dfdf0b17e1f6fea7250ef43b0/cves/2020/16xxx/CVE-2020-16009.json",
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2020-16009",
+        "https://github.com/cisagov/kev-data/tree/a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+      ],
+      "conflict_flags": [],
+      "missing_fields": [],
+      "human_verified": false,
+      "source_conflicts_adjudicated": false,
+      "text": "CVE-2020-16009 HAS_WEAKNESS CWE-787 | snapshot=cgqa-5495aa3949d0b789 | flags=[] | missing=[]"
+    },
+    {
+      "evidence_id": "source:1f8867f631686c89588e0206",
+      "cve_id": "CVE-2020-16009",
+      "kind": "property",
+      "value": {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "cvss_source": "nvd@nist.gov"
+      },
+      "origin": "frozen_structured_sources",
+      "snapshot_id": "cgqa-5495aa3949d0b789",
+      "canonical_source_sha256": "656a56ec884c39168cad87ab0ff10281ada2a747a5ddb2ecf76fe6fe9e60f319",
+      "provenance": {
+        "selected": {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "container": "NVD",
+          "version": "3.1",
+          "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "baseScore": 8.8,
+          "baseSeverity": "HIGH",
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "REQUIRED",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "HIGH",
+          "integrityImpact": "HIGH",
+          "availabilityImpact": "HIGH",
+          "source_role": "NVD"
+        },
+        "candidate_sources": [
+          {
+            "source": "ADP:CISA-ADP",
+            "scope": "UNCHANGED",
+            "version": "3.1",
+            "baseScore": 8.8,
+            "attackVector": "NETWORK",
+            "baseSeverity": "HIGH",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "integrityImpact": "HIGH",
+            "userInteraction": "REQUIRED",
+            "attackComplexity": "LOW",
+            "availabilityImpact": "HIGH",
+            "privilegesRequired": "NONE",
+            "confidentialityImpact": "HIGH",
+            "source_role": "CISA-ADP"
+          },
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "container": "NVD",
+            "version": "3.1",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "baseScore": 8.8,
+            "baseSeverity": "HIGH",
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "REQUIRED",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "availabilityImpact": "HIGH",
+            "source_role": "NVD"
+          },
+          {
+            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+            "type": "Secondary",
+            "container": "NVD",
+            "version": "3.1",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "baseScore": 8.8,
+            "baseSeverity": "HIGH",
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "REQUIRED",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "availabilityImpact": "HIGH",
+            "source_role": "CISA-ADP"
+          }
+        ]
+      },
+      "source_urls": [
+        "https://raw.githubusercontent.com/CVEProject/cvelistV5/562df31f0be1dd1dfdf0b17e1f6fea7250ef43b0/cves/2020/16xxx/CVE-2020-16009.json",
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2020-16009",
+        "https://github.com/cisagov/kev-data/tree/a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+      ],
+      "conflict_flags": [],
+      "missing_fields": [],
+      "human_verified": false,
+      "source_conflicts_adjudicated": false,
+      "text": "CVE-2020-16009 SELECTED_CVSS {\"cvss_score\": 8.8, \"cvss_source\": \"nvd@nist.gov\", \"cvss_vector\": \"CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H\", \"cvss_version\": \"3.1\"} | snapshot=cgqa-5495aa3949d0b789 | flags=[] | missing=[]"
+    },
+    {
+      "evidence_id": "source:285e799cfcb22f00ab5ed03a",
+      "cve_id": "CVE-2020-16009",
+      "kind": "relation",
+      "value": {
+        "subject": "CVE-2020-16009",
+        "predicate": "HAS_WEAKNESS",
+        "object": "cwe:65b86a6d5c9e54adde9e848a"
+      },
+      "origin": "frozen_structured_sources",
+      "snapshot_id": "cgqa-5495aa3949d0b789",
+      "canonical_source_sha256": "656a56ec884c39168cad87ab0ff10281ada2a747a5ddb2ecf76fe6fe9e60f319",
+      "provenance": {
+        "field": {
+          "accepted_ids": [
+            "CWE-787",
+            "CWE-843"
+          ],
+          "candidate_sources": [
+            {
+              "id": "CWE-843",
+              "source": "ADP:CISA-ADP",
+              "source_role": "CISA-ADP"
+            },
+            {
+              "id": "CWE-787",
+              "source": "ADP:CISA-ADP",
+              "source_role": "CISA-ADP"
+            },
+            {
+              "id": "CWE-787",
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "container": "NVD",
+              "source_role": "NVD"
+            },
+            {
+              "id": "CWE-843",
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "container": "NVD",
+              "source_role": "NVD"
+            },
+            {
+              "id": "CWE-787",
+              "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+              "type": "Secondary",
+              "container": "NVD",
+              "source_role": "CISA-ADP"
+            },
+            {
+              "id": "CWE-843",
+              "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+              "type": "Secondary",
+              "container": "NVD",
+              "source_role": "CISA-ADP"
+            }
+          ]
+        },
+        "nvd_record": {
+          "raw_file": "data/raw/full/nvd_kev_pool.json",
+          "field_path": "vulnerabilities[672].cve"
+        },
+        "cna_raw_file": "data/raw/full/cna/CVE-2020-16009.json"
+      },
+      "source_urls": [
+        "https://raw.githubusercontent.com/CVEProject/cvelistV5/562df31f0be1dd1dfdf0b17e1f6fea7250ef43b0/cves/2020/16xxx/CVE-2020-16009.json",
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2020-16009",
+        "https://github.com/cisagov/kev-data/tree/a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+      ],
+      "conflict_flags": [],
+      "missing_fields": [],
+      "human_verified": false,
+      "source_conflicts_adjudicated": false,
+      "text": "CVE-2020-16009 HAS_WEAKNESS CWE-843 | snapshot=cgqa-5495aa3949d0b789 | flags=[] | missing=[]"
+    },
+    {
+      "evidence_id": "source:5a97929416861240039f3420",
+      "cve_id": "CVE-2020-16009",
+      "kind": "relation",
+      "value": {
+        "subject": "CVE-2020-16009",
+        "predicate": "AFFECTS",
+        "object": "product:cd09ea9d498c5962ac3b2e21"
+      },
+      "origin": "frozen_structured_sources",
+      "snapshot_id": "cgqa-5495aa3949d0b789",
+      "canonical_source_sha256": "656a56ec884c39168cad87ab0ff10281ada2a747a5ddb2ecf76fe6fe9e60f319",
+      "provenance": {
+        "field": {
+          "source": "CNA",
+          "raw_file": "data/raw/full/cna/CVE-2020-16009.json",
+          "field_path": "containers.cna.affected",
+          "normalization": "casefold, whitespace trim; vendor-qualified product; exact deduplication"
+        },
+        "pair": {
+          "vendor": "Google",
+          "product": "Chrome",
+          "source": "CNA",
+          "field_path": "containers.cna.affected[0]",
+          "vendor_key": "google",
+          "product_key": "google::chrome"
+        }
+      },
+      "source_urls": [
+        "https://raw.githubusercontent.com/CVEProject/cvelistV5/562df31f0be1dd1dfdf0b17e1f6fea7250ef43b0/cves/2020/16xxx/CVE-2020-16009.json",
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2020-16009",
+        "https://github.com/cisagov/kev-data/tree/a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+      ],
+      "conflict_flags": [],
+      "missing_fields": [],
+      "human_verified": false,
+      "source_conflicts_adjudicated": false,
+      "text": "CVE-2020-16009 AFFECTS Chrome [vendor: Google] | snapshot=cgqa-5495aa3949d0b789 | flags=[] | missing=[]"
+    },
+    {
+      "evidence_id": "source:90a0b9de31fd5cdab2b392d7",
+      "cve_id": "CVE-2020-16009",
+      "kind": "record_status",
+      "value": {
+        "conflict_flags": [],
+        "missing_fields": []
+      },
+      "origin": "frozen_structured_sources",
+      "snapshot_id": "cgqa-5495aa3949d0b789",
+      "canonical_source_sha256": "656a56ec884c39168cad87ab0ff10281ada2a747a5ddb2ecf76fe6fe9e60f319",
+      "provenance": {
+        "nvd_record": {
+          "raw_file": "data/raw/full/nvd_kev_pool.json",
+          "field_path": "vulnerabilities[672].cve"
+        },
+        "description": {
+          "source": "CNA",
+          "raw_file": "data/raw/full/cna/CVE-2020-16009.json",
+          "field_path": "containers.cna.descriptions"
+        },
+        "affected_products": {
+          "source": "CNA",
+          "raw_file": "data/raw/full/cna/CVE-2020-16009.json",
+          "field_path": "containers.cna.affected",
+          "normalization": "casefold, whitespace trim; vendor-qualified product; exact deduplication"
+        },
+        "cwe_ids": {
+          "accepted_ids": [
+            "CWE-787",
+            "CWE-843"
+          ],
+          "candidate_sources": [
+            {
+              "id": "CWE-843",
+              "source": "ADP:CISA-ADP",
+              "source_role": "CISA-ADP"
+            },
+            {
+              "id": "CWE-787",
+              "source": "ADP:CISA-ADP",
+              "source_role": "CISA-ADP"
+            },
+            {
+              "id": "CWE-787",
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "container": "NVD",
+              "source_role": "NVD"
+            },
+            {
+              "id": "CWE-843",
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "container": "NVD",
+              "source_role": "NVD"
+            },
+            {
+              "id": "CWE-787",
+              "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+              "type": "Secondary",
+              "container": "NVD",
+              "source_role": "CISA-ADP"
+            },
+            {
+              "id": "CWE-843",
+              "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+              "type": "Secondary",
+              "container": "NVD",
+              "source_role": "CISA-ADP"
+            }
+          ]
+        },
+        "cvss": {
+          "selected": {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "container": "NVD",
+            "version": "3.1",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "baseScore": 8.8,
+            "baseSeverity": "HIGH",
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "REQUIRED",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "availabilityImpact": "HIGH",
+            "source_role": "NVD"
+          },
+          "candidate_sources": [
+            {
+              "source": "ADP:CISA-ADP",
+              "scope": "UNCHANGED",
+              "version": "3.1",
+              "baseScore": 8.8,
+              "attackVector": "NETWORK",
+              "baseSeverity": "HIGH",
+              "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "integrityImpact": "HIGH",
+              "userInteraction": "REQUIRED",
+              "attackComplexity": "LOW",
+              "availabilityImpact": "HIGH",
+              "privilegesRequired": "NONE",
+              "confidentialityImpact": "HIGH",
+              "source_role": "CISA-ADP"
+            },
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "container": "NVD",
+              "version": "3.1",
+              "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "baseScore": 8.8,
+              "baseSeverity": "HIGH",
+              "attackVector": "NETWORK",
+              "attackComplexity": "LOW",
+              "privilegesRequired": "NONE",
+              "userInteraction": "REQUIRED",
+              "scope": "UNCHANGED",
+              "confidentialityImpact": "HIGH",
+              "integrityImpact": "HIGH",
+              "availabilityImpact": "HIGH",
+              "source_role": "NVD"
+            },
+            {
+              "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+              "type": "Secondary",
+              "container": "NVD",
+              "version": "3.1",
+              "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "baseScore": 8.8,
+              "baseSeverity": "HIGH",
+              "attackVector": "NETWORK",
+              "attackComplexity": "LOW",
+              "privilegesRequired": "NONE",
+              "userInteraction": "REQUIRED",
+              "scope": "UNCHANGED",
+              "confidentialityImpact": "HIGH",
+              "integrityImpact": "HIGH",
+              "availabilityImpact": "HIGH",
+              "source_role": "CISA-ADP"
+            }
+          ]
+        },
+        "kev_listed": {
+          "source": "CISA KEV",
+          "raw_file": "data/raw/pilot/kev.json",
+          "revision": "a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+        },
+        "published_date": {
+          "source": "CVE metadata (fallback NVD)",
+          "raw_file": "data/raw/full/cna/CVE-2020-16009.json",
+          "field_path": "cveMetadata.datePublished"
+        }
+      },
+      "source_urls": [
+        "https://raw.githubusercontent.com/CVEProject/cvelistV5/562df31f0be1dd1dfdf0b17e1f6fea7250ef43b0/cves/2020/16xxx/CVE-2020-16009.json",
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2020-16009",
+        "https://github.com/cisagov/kev-data/tree/a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+      ],
+      "conflict_flags": [],
+      "missing_fields": [],
+      "human_verified": false,
+      "source_conflicts_adjudicated": false,
+      "text": "CVE-2020-16009 SOURCE_STATUS unadjudicated structured metadata | snapshot=cgqa-5495aa3949d0b789 | flags=[] | missing=[]"
+    },
+    {
+      "evidence_id": "source:a25e363162efab84bf2f5983",
+      "cve_id": "CVE-2020-16009",
+      "kind": "relation",
+      "value": {
+        "subject": "product:cd09ea9d498c5962ac3b2e21",
+        "predicate": "MADE_BY",
+        "object": "vendor:bbdefa2950f49882f295b128"
+      },
+      "origin": "frozen_structured_sources",
+      "snapshot_id": "cgqa-5495aa3949d0b789",
+      "canonical_source_sha256": "656a56ec884c39168cad87ab0ff10281ada2a747a5ddb2ecf76fe6fe9e60f319",
+      "provenance": {
+        "field": {
+          "source": "CNA",
+          "raw_file": "data/raw/full/cna/CVE-2020-16009.json",
+          "field_path": "containers.cna.affected",
+          "normalization": "casefold, whitespace trim; vendor-qualified product; exact deduplication"
+        },
+        "pair": {
+          "vendor": "Google",
+          "product": "Chrome",
+          "source": "CNA",
+          "field_path": "containers.cna.affected[0]",
+          "vendor_key": "google",
+          "product_key": "google::chrome"
+        }
+      },
+      "source_urls": [
+        "https://raw.githubusercontent.com/CVEProject/cvelistV5/562df31f0be1dd1dfdf0b17e1f6fea7250ef43b0/cves/2020/16xxx/CVE-2020-16009.json",
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2020-16009",
+        "https://github.com/cisagov/kev-data/tree/a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+      ],
+      "conflict_flags": [],
+      "missing_fields": [],
+      "human_verified": false,
+      "source_conflicts_adjudicated": false,
+      "text": "Chrome [vendor: Google] MADE_BY Google | snapshot=cgqa-5495aa3949d0b789 | flags=[] | missing=[]"
+    },
+    {
+      "evidence_id": "source:c03f84a00991c64cff38070a",
+      "cve_id": "CVE-2020-16009",
+      "kind": "property",
+      "value": "2020-11-03T02:21:47.000Z",
+      "origin": "frozen_structured_sources",
+      "snapshot_id": "cgqa-5495aa3949d0b789",
+      "canonical_source_sha256": "656a56ec884c39168cad87ab0ff10281ada2a747a5ddb2ecf76fe6fe9e60f319",
+      "provenance": {
+        "source": "CVE metadata (fallback NVD)",
+        "raw_file": "data/raw/full/cna/CVE-2020-16009.json",
+        "field_path": "cveMetadata.datePublished"
+      },
+      "source_urls": [
+        "https://raw.githubusercontent.com/CVEProject/cvelistV5/562df31f0be1dd1dfdf0b17e1f6fea7250ef43b0/cves/2020/16xxx/CVE-2020-16009.json",
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2020-16009",
+        "https://github.com/cisagov/kev-data/tree/a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+      ],
+      "conflict_flags": [],
+      "missing_fields": [],
+      "human_verified": false,
+      "source_conflicts_adjudicated": false,
+      "text": "CVE-2020-16009 PUBLISHED_DATE 2020-11-03T02:21:47.000Z | snapshot=cgqa-5495aa3949d0b789 | flags=[] | missing=[]"
+    },
+    {
+      "evidence_id": "source:d5c1178ee0308217b440b0f2",
+      "cve_id": "CVE-2020-16009",
+      "kind": "relation",
+      "value": {
+        "subject": "CVE-2020-16009",
+        "predicate": "HAS_SEVERITY",
+        "object": "severity:b43e72eed0488d784f1e3092"
+      },
+      "origin": "frozen_structured_sources",
+      "snapshot_id": "cgqa-5495aa3949d0b789",
+      "canonical_source_sha256": "656a56ec884c39168cad87ab0ff10281ada2a747a5ddb2ecf76fe6fe9e60f319",
+      "provenance": {
+        "field": {
+          "selected": {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "container": "NVD",
+            "version": "3.1",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "baseScore": 8.8,
+            "baseSeverity": "HIGH",
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "REQUIRED",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "availabilityImpact": "HIGH",
+            "source_role": "NVD"
+          },
+          "candidate_sources": [
+            {
+              "source": "ADP:CISA-ADP",
+              "scope": "UNCHANGED",
+              "version": "3.1",
+              "baseScore": 8.8,
+              "attackVector": "NETWORK",
+              "baseSeverity": "HIGH",
+              "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "integrityImpact": "HIGH",
+              "userInteraction": "REQUIRED",
+              "attackComplexity": "LOW",
+              "availabilityImpact": "HIGH",
+              "privilegesRequired": "NONE",
+              "confidentialityImpact": "HIGH",
+              "source_role": "CISA-ADP"
+            },
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "container": "NVD",
+              "version": "3.1",
+              "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "baseScore": 8.8,
+              "baseSeverity": "HIGH",
+              "attackVector": "NETWORK",
+              "attackComplexity": "LOW",
+              "privilegesRequired": "NONE",
+              "userInteraction": "REQUIRED",
+              "scope": "UNCHANGED",
+              "confidentialityImpact": "HIGH",
+              "integrityImpact": "HIGH",
+              "availabilityImpact": "HIGH",
+              "source_role": "NVD"
+            },
+            {
+              "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+              "type": "Secondary",
+              "container": "NVD",
+              "version": "3.1",
+              "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "baseScore": 8.8,
+              "baseSeverity": "HIGH",
+              "attackVector": "NETWORK",
+              "attackComplexity": "LOW",
+              "privilegesRequired": "NONE",
+              "userInteraction": "REQUIRED",
+              "scope": "UNCHANGED",
+              "confidentialityImpact": "HIGH",
+              "integrityImpact": "HIGH",
+              "availabilityImpact": "HIGH",
+              "source_role": "CISA-ADP"
+            }
+          ]
+        },
+        "nvd_record": {
+          "raw_file": "data/raw/full/nvd_kev_pool.json",
+          "field_path": "vulnerabilities[672].cve"
+        },
+        "cna_raw_file": "data/raw/full/cna/CVE-2020-16009.json"
+      },
+      "source_urls": [
+        "https://raw.githubusercontent.com/CVEProject/cvelistV5/562df31f0be1dd1dfdf0b17e1f6fea7250ef43b0/cves/2020/16xxx/CVE-2020-16009.json",
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2020-16009",
+        "https://github.com/cisagov/kev-data/tree/a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+      ],
+      "conflict_flags": [],
+      "missing_fields": [],
+      "human_verified": false,
+      "source_conflicts_adjudicated": false,
+      "text": "CVE-2020-16009 HAS_SEVERITY HIGH | snapshot=cgqa-5495aa3949d0b789 | flags=[] | missing=[]"
+    },
+    {
+      "evidence_id": "source:eface70cb0c4dcf4fe6f35f9",
+      "cve_id": "CVE-2020-16009",
+      "kind": "description",
+      "value": "Inappropriate implementation in V8 in Google Chrome prior to 86.0.4240.183 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+      "origin": "frozen_structured_sources",
+      "snapshot_id": "cgqa-5495aa3949d0b789",
+      "canonical_source_sha256": "656a56ec884c39168cad87ab0ff10281ada2a747a5ddb2ecf76fe6fe9e60f319",
+      "provenance": {
+        "source": "CNA",
+        "raw_file": "data/raw/full/cna/CVE-2020-16009.json",
+        "field_path": "containers.cna.descriptions"
+      },
+      "source_urls": [
+        "https://raw.githubusercontent.com/CVEProject/cvelistV5/562df31f0be1dd1dfdf0b17e1f6fea7250ef43b0/cves/2020/16xxx/CVE-2020-16009.json",
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2020-16009",
+        "https://github.com/cisagov/kev-data/tree/a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+      ],
+      "conflict_flags": [],
+      "missing_fields": [],
+      "human_verified": false,
+      "source_conflicts_adjudicated": false,
+      "text": "CVE-2020-16009: Inappropriate implementation in V8 in Google Chrome prior to 86.0.4240.183 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. | snapshot=cgqa-5495aa3949d0b789 | flags=[] | missing=[]"
+    },
+    {
+      "evidence_id": "source:fad32574134cb29d750a560b",
+      "cve_id": "CVE-2020-16009",
+      "kind": "property",
+      "value": {
+        "kev_listed": true,
+        "kev_date_added": "2021-11-03"
+      },
+      "origin": "frozen_structured_sources",
+      "snapshot_id": "cgqa-5495aa3949d0b789",
+      "canonical_source_sha256": "656a56ec884c39168cad87ab0ff10281ada2a747a5ddb2ecf76fe6fe9e60f319",
+      "provenance": {
+        "source": "CISA KEV",
+        "raw_file": "data/raw/pilot/kev.json",
+        "revision": "a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+      },
+      "source_urls": [
+        "https://raw.githubusercontent.com/CVEProject/cvelistV5/562df31f0be1dd1dfdf0b17e1f6fea7250ef43b0/cves/2020/16xxx/CVE-2020-16009.json",
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2020-16009",
+        "https://github.com/cisagov/kev-data/tree/a0c559f6c53d970e5f196044ef9c50936bbc0e26"
+      ],
+      "conflict_flags": [],
+      "missing_fields": [],
+      "human_verified": false,
+      "source_conflicts_adjudicated": false,
+      "text": "CVE-2020-16009 KEV_SNAPSHOT_MEMBERSHIP {\"kev_date_added\": \"2021-11-03\", \"kev_listed\": true} | snapshot=cgqa-5495aa3949d0b789 | flags=[] | missing=[]"
+    }
+  ]
+}

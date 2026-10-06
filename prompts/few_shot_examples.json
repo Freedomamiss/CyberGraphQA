@@ -1,0 +1,43 @@
+{
+  "status": "synthetic design examples, not used in frozen extraction",
+  "variant": "literal-facts-fewshot-design-v1",
+  "examples": [
+    {
+      "input": {
+        "cve_id": "CVE-2099-10001",
+        "description": "ExampleCo Widget permits remote code execution."
+      },
+      "output": {
+        "cve_id": "CVE-2099-10001",
+        "products": [
+          {
+            "name": "ExampleCo Widget",
+            "evidence": "ExampleCo Widget",
+            "vendors": [
+              {
+                "name": "ExampleCo",
+                "evidence": "ExampleCo Widget"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "input": {
+        "cve_id": "CVE-2099-10002",
+        "description": "Memory corruption in ParserZ allows a crash."
+      },
+      "output": {
+        "cve_id": "CVE-2099-10002",
+        "products": [
+          {
+            "name": "ParserZ",
+            "evidence": "ParserZ",
+            "vendors": []
+          }
+        ]
+      }
+    }
+  ]
+}
