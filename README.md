@@ -1,4 +1,4 @@
-# CyberGraphQA — CS 6338 Milestone 2
+# CyberGraphQA
 
 This is an isolated architecture/design checkpoint based on the existing CyberGraphQA prototype. It does not replace frozen experiments. The ten-page PDF is `docs/CyberGraphQA_GraphRAG_DesignDoc.pdf`.
 
